@@ -8,6 +8,7 @@
         "descriptor": ["3.1.1.1", "3.1.1.2"],
         "marks": "4",
         "tech": ["TA"]
+        "format": ["SR"]
     },
     {
         "question": "00002",
@@ -18,5 +19,6 @@
         "descriptor": ["3.1.1.2"],
         "marks": "1",
         "tech": ["TA"]
+        "format": ["MCQ"]
     }
 ]
