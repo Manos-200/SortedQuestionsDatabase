@@ -104,10 +104,31 @@
             justify-content: flex-start;
             text-align: right;
         }
+
+
+        }
         #descriptor {
             width: 600px;
             white-space: normal;
             word-wrap: break-word;
+        }
+
+        .load-more {
+            display: block;
+            margin: 20px auto;
+            width: 10%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .load-more:hover {
+            background-color: #0056b3;
         }
 
 
@@ -123,38 +144,44 @@
         <form class="filter-form" id="filterForm">
             <label for="unit">Select Unit:</label>
             <select id="unit" name="unit" onchange="populateTopics()">
-                <option value="">-- Select Unit --</option>
+                <option value="">-- All Available --</option>
                 <option value="3">Unit 3: Further Calculus</option>
                 <option value="4">Unit 4: Further Functions and Statistics</option>
             </select>
 
             <label for="topic">Select Topic:</label>
             <select id="topic" name="topic" onchange="populateSubtopics()">
-                <option value="">-- Select Topic --</option>
+                <option value="">-- All Available --</option>
             </select>
 
             <label for="subtopic">Select Subtopic:</label>
             <select id="subtopic" name="subtopic" onchange="populateDescriptors()">
-                <option value="">-- Select Subtopic --</option>
+                <option value="">-- All Available --</option>
             </select>
 
             <label for="descriptor">Select Syllabus Descriptor:</label>
             <select id="descriptor" name="descriptor">
-                <option value="">-- Select Syllabus Descriptor --</option>
+                <option value="">-- All Available --</option>
             </select>
 
             <label for="difficulty">Select Difficulty:</label>
             <select id="difficulty" name="difficulty">
-                <option value="">-- Select Difficulty --</option>
+                <option value="">-- All Available --</option>
                 <option value="SF">Simple Familiar</option>
                 <option value="CF">Complex Familiar</option>
                 <option value="CU">Complex Unfamiliar</option>
             </select>
             <label for="tech">Technology:</label>
             <select id="tech" name="tech">
-                <option value="">-- Select Technology --</option>
+                <option value="">-- All Available --</option>
                 <option value="TF">Tech Free</option>
                 <option value="TA">Tech Active</option>
+            </select>
+            <label for="format">Format:</label>
+            <select id="format" name="tech">
+                <option value="">-- All Available --</option>
+                <option value="SR">Short Response</option>
+                <option value="MCQ">Multiple Choice</option>
             </select>
 
 
@@ -632,7 +659,7 @@ const topics = {
         function populateTopics() {
             const unit = document.getElementById('unit').value;
             const topicSelect = document.getElementById('topic');
-            topicSelect.innerHTML = '<option value="">-- Select Topic --</option>';
+            topicSelect.innerHTML = '<option value="">-- All Available --</option>';
 
             if (unit && topics[unit]) {
                 topics[unit].forEach(topic => {
@@ -643,8 +670,8 @@ const topics = {
                 });
             }
 
-            document.getElementById('subtopic').innerHTML = '<option value="">-- Select Subtopic --</option>';
-            document.getElementById('descriptor').innerHTML = '<option value="">-- Select Syllabus Descriptor --</option>';
+            document.getElementById('subtopic').innerHTML = '<option value="">-- All Available --</option>';
+            document.getElementById('descriptor').innerHTML = '<option value="">-- All Available --</option>';
         }
 
         function populateSubtopics() {
@@ -652,7 +679,7 @@ const topics = {
             const topic = document.getElementById('topic').value;
             const subtopicSelect = document.getElementById('subtopic');
 
-            subtopicSelect.innerHTML = '<option value="">-- Select Subtopic --</option>';
+            subtopicSelect.innerHTML = '<option value="">-- All Available --</option>';
 
             if (unit && topic && topics[unit]) {
                 const selectedTopic = topics[unit].find(t => t.value === topic);
@@ -666,7 +693,7 @@ const topics = {
                 }
             }
 
-            document.getElementById('descriptor').innerHTML = '<option value="">-- Select Syllabus Descriptor --</option>';
+            document.getElementById('descriptor').innerHTML = '<option value="">-- All Available --</option>';
         }
 
        function populateDescriptors() {
@@ -675,7 +702,7 @@ const topics = {
             const subtopic = document.getElementById('subtopic').value;
             const descriptorSelect = document.getElementById('descriptor');
 
-            descriptorSelect.innerHTML = '<option value="">-- Select Syllabus Descriptor --</option>';
+            descriptorSelect.innerHTML = '<option value="">-- All Available --</option>';
 
             if (unit && topic && subtopic && topics[unit]) {
                 const selectedTopic = topics[unit].find(t => t.value === topic);
@@ -692,65 +719,130 @@ const topics = {
         }
 
 
+        let currentPage = 0; // Tracks the current page of results
+        const resultsPerPage = 10; // Number of results to load per page
+
         function filterQuestions() {
             const unit = document.getElementById('unit').value;
             const topic = document.getElementById('topic').value;
             const subtopic = document.getElementById('subtopic').value;
             const descriptor = document.getElementById('descriptor').value;
             const difficulty = document.getElementById('difficulty').value;
-            const tech = document.getElementById('tech').value; // Get the selected technology value
+            const tech = document.getElementById('tech').value;
+            const format = document.getElementById('format').value;
 
             const resultsDiv = document.getElementById('results');
             resultsDiv.innerHTML = '<h3>Filtered Results</h3>';
+            currentPage = 0;
 
-            fetch('https://manos-200.github.io/SortedQuestionsDatabase/questions.json') // Path to your JSON file
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Network response was not ok');
-                    }
-                    return response.json();
-                })
+            // Fetch JSON data (replace the URL with the actual path to your JSON file)
+            fetch('https://manos-200.github.io/SortedQuestionsDatabase/questions.json')
+                .then(response => response.json())
                 .then(data => {
-                    // Filter the questions based on the selected filters
-                    const filteredResults = data.filter(q => 
-                        (!unit || q.unit === unit) &&
-                        (!topic || q.topic === topic) &&
-                        (!subtopic || q.subtopic === subtopic) &&
+                    const filteredResults = data.filter(q =>
+                        (!unit || q.unit.includes(unit)) &&
+                        (!topic || q.topic.includes(topic)) &&
+                        (!subtopic || q.subtopic.includes(subtopic)) &&
                         (!descriptor || q.descriptor.includes(descriptor)) &&
-                        (!difficulty || q.difficulty === difficulty) &&
-                        (!tech || q.tech === tech) // Filter for technology (TF or TA)
+                        (!difficulty || q.difficulty.includes(difficulty)) &&
+                        (!tech || q.tech.includes(tech)) &&
+                        (!format || q.format.includes(format))
                     );
 
-                    // Display the results
                     if (filteredResults.length === 0) {
                         resultsDiv.innerHTML += '<p>No questions match the selected filters.</p>';
                     } else {
-                        filteredResults.forEach(q => {
-                            const imageUrl = `images/${q.question}.png`;
-
-                            // Create a container for the image and the text side by side
-                            resultsDiv.innerHTML += `<div class="result-item">
-                                <div class="result-item-content">
-                                    <img src="${imageUrl}" alt="Question Image for ${q.question}" 
-                                        class="result-image" 
-                                        onerror="this.onerror=null; this.src=''; this.alt='Error. Could not load question';">
-                                    <div class="result-details">
-                                        <strong>Difficulty:</strong> ${q.difficulty} <br>
-                                        <strong>Marks:</strong> ${q.marks} <br>
-                                        <strong>Technology:</strong> ${q.tech === 'TF' ? 'Tech Free' : 'Tech Active'} <br>
-                                        <strong>Descriptor(s):</strong> ${q.descriptor.join(', ')}
-                                    </div>
-                                </div>
-                                <hr class="divider">  <!-- Adding a divider line between results -->
-                            </div>`;
-                        });
+                        displayResults(filteredResults, resultsDiv);
                     }
                 })
                 .catch(error => {
-                    console.error('Error fetching or processing data:', error);
-                    resultsDiv.innerHTML += '<p>There was an error loading the questions. Please try again later.</p>';
+                    console.error('Error fetching JSON:', error);
+                    resultsDiv.innerHTML += '<p>Error loading questions. Please try again later.</p>';
                 });
         }
+
+function displayResults(results, resultsDiv) {
+    const start = currentPage * resultsPerPage;
+    const end = start + resultsPerPage;
+
+    // Get the current slice of results to display
+    const currentResults = results.slice(start, end);
+
+    currentResults.forEach(q => {
+        const imageUrl = `images/${q.question}.png`;
+        resultsDiv.innerHTML += `<div class="result-item">
+            <div class="result-item-content">
+                <img src="${imageUrl}" alt="Question Image for ${q.question}" 
+                    class="result-image" 
+                    onerror="this.onerror=null; this.src=''; this.alt='Error. Could not load image';">
+                <div class="result-details">
+                    <p> <strong>Difficulty:</strong> ${q.difficulty} <br> </p>
+                    <p> <strong>Marks:</strong> ${q.marks} <br> </p>
+                    <p> <strong>Technology:</strong> ${q.tech === 'TF' ? 'Tech Free' : 'Tech Active'} <br> </p>
+                    <p> <strong>Descriptor(s):</strong> ${q.descriptor.join(', ')} </p>
+                </div>
+            </div>
+            <hr class="divider">  <!-- Adding a divider line between results -->
+        </div>`;
+    });
+
+    // Check if there are more results to load
+    const loadMoreButton = document.getElementById('loadMoreButton');
+    let resultsLabel = document.getElementById('resultsLabel'); // Check if the label already exists
+
+    if (results.length > end) {
+        if (!loadMoreButton) {
+            // Create the "Load More" button
+            const loadMoreButton = document.createElement('button');
+            loadMoreButton.id = 'loadMoreButton';
+            loadMoreButton.innerText = 'Load More';
+            loadMoreButton.classList.add("button");
+            loadMoreButton.classList.add("load-more");
+            loadMoreButton.onclick = () => {
+                currentPage++;
+                displayResults(results, resultsDiv);
+            };
+            resultsDiv.appendChild(loadMoreButton);
+        }
+
+
+
+    } else {
+        // Remove the "Load More" button if there are no more results
+        if (loadMoreButton) {
+            loadMoreButton.remove();
+        }
+
+    }
+    updateResultsLabel();
+
+    // Function to move the label to the end of the resultsDiv
+    function updateResultsLabel() {
+
+        // Create the label if it doesn't already exist
+        if (!resultsLabel) {
+            resultsLabel = document.createElement('p');
+            resultsLabel.id = 'resultsLabel';
+            resultsLabel.style.textAlign = 'center'; // Center the text
+            resultsLabel.style.fontSize = '14px'; // Adjust text size
+            resultsLabel.style.color = '#666'; // Light gray color
+            resultsLabel.style.marginTop = '10px'; // Add space above the label
+            resultsDiv.appendChild(resultsLabel); // Initially append the label to resultsDiv
+        } else {
+        // Update the label to indicate all results are shown
+            if (resultsLabel) {
+                resultsLabel.innerText = `Showing all ${results.length} results`;
+            }
+        }
+            // Update the label text
+            resultsLabel.innerText = `Showing ${end} of ${results.length} results`;
+        if (resultsLabel) {
+            resultsDiv.appendChild(resultsLabel); // Re-append to move it to the end
+        }
+    }
+}
+
+
 
 
 
