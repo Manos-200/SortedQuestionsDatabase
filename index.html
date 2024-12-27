@@ -96,6 +96,7 @@
             max-width: 600px; /* Adjust the size of the image */
             max-height: 600px;
             object-fit: contain; /* Ensures the image doesn't stretch or distort */
+            width: 100%;
         }
 
         .result-details {
@@ -111,6 +112,27 @@
             width: 600px;
             white-space: normal;
             word-wrap: break-word;
+        }
+
+        @media screen and (max-width: 768px) {
+            .result-item-content {
+                flex-direction: column; /* Stack image and text vertically */
+                align-items: center; /* Center align the content */
+            }
+
+            .result-image {
+                max-width: 90%; /* Shrink image to 90% of container width */
+                height: auto; /* Maintain aspect ratio */
+            }
+
+            .result-details {
+                text-align: center; /* Center text for better readability */
+                width: 100%; /* Use full width */
+            }
+
+            #descriptor {
+                width: 100%; /* Adjust descriptor to full width */
+            }
         }
 
         .load-more {
@@ -778,7 +800,6 @@ function displayResults(results, resultsDiv) {
                     onerror="this.onerror=null; this.src=''; this.alt='Error. Could not load image';">
                 <div class="result-details">
                     <p> <strong>Difficulty:</strong> ${q.difficulty} <br> </p>
-                    <p> <strong>Marks:</strong> ${q.marks} <br> </p>
                     <p> <strong>Technology:</strong> ${q.tech === 'TF' ? 'Tech Free' : 'Tech Active'} <br> </p>
                     <p> <strong>Descriptor(s):</strong> ${q.descriptor.join(', ')} </p>
                 </div>
