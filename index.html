@@ -765,6 +765,7 @@ function displayResults(results, resultsDiv) {
     const start = currentPage * resultsPerPage;
     const end = start + resultsPerPage;
 
+
     // Get the current slice of results to display
     const currentResults = results.slice(start, end);
 
@@ -791,8 +792,6 @@ function displayResults(results, resultsDiv) {
     let resultsLabel = document.getElementById('resultsLabel'); // Check if the label already exists
 
     if (results.length > end) {
-        if (!loadMoreButton) {
-            // Create the "Load More" button
             const loadMoreButton = document.createElement('button');
             loadMoreButton.id = 'loadMoreButton';
             loadMoreButton.innerText = 'Load More';
@@ -800,19 +799,10 @@ function displayResults(results, resultsDiv) {
             loadMoreButton.classList.add("load-more");
             loadMoreButton.onclick = () => {
                 currentPage++;
+                loadMoreButton.remove();
                 displayResults(results, resultsDiv);
             };
             resultsDiv.appendChild(loadMoreButton);
-        }
-
-
-
-    } else {
-        // Remove the "Load More" button if there are no more results
-        if (loadMoreButton) {
-            loadMoreButton.remove();
-        }
-
     }
     updateResultsLabel();
 
@@ -828,14 +818,15 @@ function displayResults(results, resultsDiv) {
             resultsLabel.style.color = '#666'; // Light gray color
             resultsLabel.style.marginTop = '10px'; // Add space above the label
             resultsDiv.appendChild(resultsLabel); // Initially append the label to resultsDiv
-        } else {
-        // Update the label to indicate all results are shown
-            if (resultsLabel) {
-                resultsLabel.innerText = `Showing all ${results.length} results`;
-            }
         }
-            // Update the label text
+
+        if (end >= results.length) { // Ensure we don't get stupid things like "70 of 67 results"
+            resultsLabel.innerText = `Showing ${results.length} of ${results.length} results`;
+        } else {
             resultsLabel.innerText = `Showing ${end} of ${results.length} results`;
+        }
+        
+
         if (resultsLabel) {
             resultsDiv.appendChild(resultsLabel); // Re-append to move it to the end
         }
