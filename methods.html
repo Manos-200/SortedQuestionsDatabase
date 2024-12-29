@@ -1,0 +1,979 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QCAA Sorter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            position: relative; /* Make the header a relative container for positioning */
+        }
+        header .home-button {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            background-color: #fff;
+            color: #007BFF;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        header .home-button:hover {
+            background-color: #0056b3;
+            color: white;
+        }
+        
+        main {
+            padding: 20px;
+        }
+        .filter-form {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+            width: 100%
+        }
+        .filter-form label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        .filter-form select,
+        .filter-form input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background: white;
+            box-sizing: border-box;
+            appearance: none;
+            background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns%3D%22http%3A//www.w3.org/2000/svg%22 viewBox%3D%220 0 4 5%22%3E%3Cpath fill%3D%22%23000%22 d%3D%22M2 0L0 2h4zm0 5L0 3h4z%22/%3E%3C/svg%3E');
+            background-repeat: no-repeat;
+            background-position: right 10px center;
+            background-size: 10px;
+        }
+        .filter-form input[type="text"] {
+            background-image: none;
+        }
+        .filter-form select:focus,
+        .filter-form input[type="text"]:focus {
+            outline: none;
+            border-color: #007BFF;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+        .filter-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .filter-form button:hover {
+            background-color: #0056b3;
+        }
+        .filter-container {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+        }
+        .links-section {
+            flex: 1;
+            max-width: 200px;
+        }
+        .right-section {
+            flex: 1;
+            max-width: 200px;
+            text-align: right;
+        }
+        .links-section u1 {
+            list-style: none;
+            padding: 0;
+        }
+        .links-section 1i {
+            margin-bottom: 10px;
+        }
+        .links-section a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+        .links-section a:hover {
+            color: #0056b3
+        }
+        .form-section {
+            flex: 2;
+            display: flex;
+            justify-content: center;
+            width: 100%
+        }
+        .results {
+            margin-top: 20px;
+            padding: 10px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .result-item {
+            margin-bottom: 15px;
+        }
+        .result-item strong {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .divider {
+            border: none;
+            border-top: 1px solid #ccc;
+            margin: 20px 0;
+        }
+        .result-item-content {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 20px; /* Adds space between the image and the text */
+        }
+
+        .result-image {
+            max-width: 600px; /* Adjust the size of the image */
+            max-height: 600px;
+            object-fit: contain; /* Ensures the image doesn't stretch or distort */
+            width: 100%;
+        }
+
+        .result-details {
+            display: flex;
+            flex-direction: column; /* Stack the details vertically */
+            justify-content: flex-start;
+            text-align: right;
+        }
+
+
+        }
+        #descriptor {
+            width: 600px;
+            white-space: normal;
+            word-wrap: break-word;
+        }
+
+        @media screen and (max-width: 768px) {
+            .result-item-content {
+                flex-direction: column; /* Stack image and text vertically */
+                align-items: center; /* Center align the content */
+            }
+
+            .result-image {
+                max-width: 90%; /* Shrink image to 90% of container width */
+                height: auto; /* Maintain aspect ratio */
+            }
+
+            .result-details {
+                text-align: left; /* Center text for better readability */
+                width: 100%; /* Use full width */
+                flex-direction: row;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 10px;
+            }
+
+            #descriptor {
+                width: 100%; /* Adjust descriptor to full width */
+            }
+            .links-section,
+            .right-section {
+                display: none; /* Hide the fancy links on mobile cause theres not enough room */
+            }
+        }
+
+        .load-more {
+            display: block;
+            margin: 20px auto;
+            width: 150px;
+            max-width: 50%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .load-more:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #f1f1f1; /* Light gray footer */
+            font-size: 14px;
+            margin-top: 20px;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DEMO - Not for actual use just yet :)</h1>
+        <p>Filter QCAA Exam Questions by Difficulty and Syllabus Descriptor</p>
+        <a href="index.html" class="home-button">Home</a>
+    </header>
+    <main>
+        <div class="filter-container">
+            <aside class="links-section">
+             <u1>
+                <h2>Useful Links</h2>   
+                <li><a href="https://www.qcaa.qld.edu.au/downloads/senior-qce/syllabuses/snr_maths_methods_19_syll.pdf">Methods Syllabus</a></li>
+                <li><a href="https://www.qcaa.qld.edu.au/downloads/senior-qce/mathematics/snr_maths_methods_21_formula_sheet.pdf">Methods Formula Sheet</a></li>
+                <li><a href="https://www.derivative-calculator.net/">Derivative Calculator</a></li>
+                <li><a href="https://www.integral-calculator.com/">Integral Calculator</a></li>
+            </u1>
+            </aside>
+            <section class="form-section">
+                <form class="filter-form" id="filterForm">
+                    <label for="unit">Select Unit:</label>
+                    <select id="unit" name="unit" onchange="populateTopics()">
+                        <option value="">-- All Available --</option>
+                        <option value="3">Unit 3: Further Calculus</option>
+                        <option value="4">Unit 4: Further Functions and Statistics</option>
+                    </select>
+
+                    <label for="topic">Select Topic:</label>
+                    <select id="topic" name="topic" onchange="populateSubtopics()">
+                        <option value="">-- All Available --</option>
+                    </select>
+
+                    <label for="subtopic">Select Subtopic:</label>
+                    <select id="subtopic" name="subtopic" onchange="populateDescriptors()">
+                        <option value="">-- All Available --</option>
+                    </select>
+
+                    <label for="descriptor">Select Syllabus Descriptor:</label>
+                    <select id="descriptor" name="descriptor">
+                        <option value="">-- All Available --</option>
+                    </select>
+
+                    <label for="difficulty">Select Difficulty:</label>
+                    <select id="difficulty" name="difficulty">
+                        <option value="">-- All Available --</option>
+                        <option value="SF">Simple Familiar</option>
+                        <option value="CF">Complex Familiar</option>
+                        <option value="CU">Complex Unfamiliar</option>
+                    </select>
+                    <label for="tech">Technology:</label>
+                    <select id="tech" name="tech">
+                        <option value="">-- All Available --</option>
+                        <option value="TF">Tech Free</option>
+                        <option value="TA">Tech Active</option>
+                    </select>
+                    <label for="format">Format:</label>
+                    <select id="format" name="format">
+                        <option value="">-- All Available --</option>
+                        <option value="SR">Short Response</option>
+                        <option value="MCQ">Multiple Choice</option>
+                    </select>
+                    <label for="searchText">Contains Text:</label>
+                    <input type="text" id="searchText" name="searchText" placeholder="Enter text to search">
+
+
+                    <button type="button" onclick="filterQuestions()">Filter Questions</button>
+                </form>
+            </section>
+            <div class="right-section">
+                <aside class="links-section">
+                <u1>
+                    <h2>Navigate</h2>   
+                    <li><a href="https://www.qcaa.qld.edu.au/downloads/senior-qce/syllabuses/snr_maths_methods_19_syll.pdf">Methods Syllabus</a></li>
+                    <li><a href="https://www.qcaa.qld.edu.au/downloads/senior-qce/mathematics/snr_maths_methods_21_formula_sheet.pdf">Methods Formula Sheet</a></li>
+                    <li><a href="https://www.derivative-calculator.net/">Derivative Calculator</a></li>
+                    <li><a href="https://www.integral-calculator.com/">Licenses</a></li>
+                </u1>
+                </aside>
+            </div>
+        </div>
+
+
+
+        <div class="results" id="results">
+            <h3>Filtered Results</h3>
+            <p>No results to display. Please use the filters above.</p>
+        </div>
+    </main>
+
+    <script>
+
+    // Sorting syllabus descriptors by unit, topic, and subtopic
+const topics = {
+    3: [
+        {
+            value: "3.1", 
+            text: "Topic 1: The logarithmic function 2", 
+            subtopics: [
+                {
+                    value: "3.1.1", 
+                    text: "Logarithmic laws and logarithmic functions", 
+                    descriptors: [
+                        {
+                            value: "3.1.1.1",
+                            text: "establish and use logarithmic laws and definitions"
+                        },
+                        {
+                            value: "3.1.1.2",
+                            text: "interpret and use logarithmic scales such as decibels in acoustics, the Richter scale for earthquake magnitude, octaves in music, pH in chemistry"
+                        },
+                        {
+                            value: "3.1.1.3",
+                            text: "solve equations involving indices with and without technology"
+                        },
+                        {
+                            value: "3.1.1.4",
+                            text: "recognise the qualitative features of the graph of 𝑦 = log𝑎(𝑥) (𝑎 > 1), including asymptotes, and of its translations 𝑦 = log𝑎(𝑥) + 𝑏 and 𝑦 = log𝑎(𝑥 + 𝑐)"
+                        },
+                        {
+                            value: "3.1.1.5",
+                            text: "solve equations involving logarithmic functions with and without technology"
+                        },
+                        {
+                            value: "3.1.1.6",
+                            text: "identify contexts suitable for modelling by logarithmic functions and use them to solve practical problems; verify and evaluate the usefulness of the model using qualitative statements and quantitative analysis"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            value: "3.2", 
+            text: "Topic 2: Further differentiation and applications 2", 
+            subtopics: [
+                { 
+                    value: "3.2.1", 
+                    text: "Calculus of exponential functions", 
+                    descriptors: [
+                        {
+                            value: "3.2.1.1",
+                            text: "estimate the limit of (𝑎^ℎ−1)/ℎ as ℎ → 0 using technology, for various values of 𝑎 > 0"
+                        },
+                        {
+                            value: "3.2.1.2",
+                            text: "recognise that 𝑒 is the unique number 𝑎 for which the above limit is 1"
+                        },
+                        {
+                            value: "3.2.1.3",
+                            text: "define the exponential function 𝑒^x"
+                        },
+                        {
+                            value: "3.2.1.4",
+                            text: "establish and use the formula 𝑑/𝑑𝑥(𝑒^𝑥) = 𝑒^𝑥 and 𝑑/𝑑𝑥 𝑒^𝑓(𝑥) = 𝑓′(𝑥)𝑒^𝑓(𝑥)"
+                        },
+                        {
+                            value: "3.2.1.5",
+                            text: "identify contexts suitable for mathematical modelling by exponential functions and their derivatives and use the model to solve practical problems; verify and evaluate the usefulness of the model using qualitative statements and quantitative analysis"
+                        }
+                    ] 
+                }, 
+                { 
+                    value: "3.2.2", 
+                    text: "Calculus of logarithmic functions", 
+                    descriptors: [
+                        {
+                            value: "3.2.2.1",
+                            text: "define the natural logarithm ln(𝑥) = log𝑒(𝑥)"
+                        },
+                        {
+                            value: "3.2.2.2",
+                            text: "recognise and use the inverse relationship of the functions 𝑦 = 𝑒^𝑥 and 𝑦 = ln(𝑥)"
+                        },
+                        {
+                            value: "3.2.2.3",
+                            text: "establish and use the formulas 𝑑/𝑑𝑥 (ln(𝑥)) = 1/𝑥 and 𝑑/𝑑𝑥 (ln 𝑓(𝑥)) = 𝑓′(𝑥)/𝑓(𝑥)"
+                        },
+                        {
+                            value: "3.2.2.4",
+                            text: "use logarithmic functions and their derivatives to solve practical problems"
+                        }
+                    ] 
+                },
+                { 
+                    value: "3.2.3", 
+                    text: "Calculus of trigonometric functions", 
+                    descriptors: [
+                        {
+                            value: "3.2.3.1",
+                            text: "establish the formulas 𝑑/𝑑𝑥 sin(𝑥) = cos(𝑥), and 𝑑/𝑑𝑥 cos(𝑥) = − sin(𝑥) by numerical estimations of the limits and informal proofs based on geometric constructions"
+                        },
+                        {
+                            value: "3.2.3.2",
+                            text: "identify contexts suitable for modelling by trigonometric functions and their derivatives and use the model to solve practical problems; verify and evaluate the usefulness of the model using qualitative statements and quantitative analysis"
+                        },
+                        {
+                            value: "3.2.3.3",
+                            text: "use trigonometric functions and their derivatives to solve practical problems; including trigonometric functions of the form 𝑦 = sin(𝑓(𝑥)) and 𝑦 = cos(𝑓(𝑥))"
+                        }
+                    ] 
+                },
+                { 
+                    value: "3.2.4", 
+                    text: "Differentiation rules", 
+                    descriptors: [
+                        {
+                            value: "3.2.4.1",
+                            text: "select and apply the product rule, quotient rule and chain rule to differentiate functions; express derivatives in simplest and factorised form"
+                        }
+                    ] 
+                }
+            ]
+        },
+        {
+            value: "3.3", 
+            text: "Topic 3: Integrals", 
+            subtopics: [
+                { 
+                    value: "3.3.1", 
+                    text: "Anti-differentiation", 
+                    descriptors: [
+                        {
+                            value: "3.3.1.1",
+                            text: "recognise anti-differentiation as the reverse of differentiation"
+                        },
+                        {
+                            value: "3.3.1.2",
+                            text: "use the notation ∫ 𝑓(𝑥)𝑑𝑥 for anti-derivatives or indefinite integrals"
+                        },
+                        {
+                            value: "3.3.1.3",
+                            text: "establish and use the formula ∫ 𝑥^𝑛 𝑑𝑥 = 1/(𝑛+1) 𝑥^(𝑛+1) + 𝑐 for 𝑛 ≠ -1"
+                        },
+                        {
+                            value: "3.3.1.4",
+                            text: "establish and use the formula ∫ 𝑒^𝑥 𝑑𝑥 = 𝑒^𝑥 + 𝑐"
+                        },
+                        {
+                            value: "3.3.1.5",
+                            text: "establish and use the formulas ∫ 1/𝑥 𝑑𝑥 = ln(𝑥) + 𝑐, for 𝑥 > 0 and ∫ 1/(𝑎𝑥+𝑏) 𝑑𝑥 = 1/𝑎 ln(𝑎𝑥 + 𝑏) + 𝑐"
+                        },
+                        {
+                            value: "3.3.1.6",
+                            text: "establish and use the formulas ∫ sin(𝑥) 𝑑𝑥 = −cos(𝑥) + 𝑐 and ∫ cos(𝑥)𝑑𝑥 = sin(𝑥) + 𝑐"
+                        },
+                        {
+                            value: "3.3.1.7",
+                            text: "understand and use the formula for indefinite integrals of the form ∫(𝑓(𝑥) + 𝑔(𝑥))𝑑𝑥 = ∫𝑓(𝑥)𝑑𝑥 + ∫𝑔(𝑥)𝑑𝑥"
+                        },
+                        {
+                            value: "3.3.1.8",
+                            text: "determine indefinite integrals of the form ∫𝑓(𝑎𝑥 + 𝑏)𝑑𝑥"
+                        },
+                        {
+                            value: "3.3.1.9",
+                            text: "determine 𝑓(𝑥), given 𝑓′(𝑥) and an initial condition 𝑓(𝑎) = 𝑏"
+                        },
+                        {
+                            value: "3.3.1.10",
+                            text: "determine the integral of a function using information about the derivative of the given function (integration by recognition)"
+                        },
+                        {
+                            value: "3.3.1.11",
+                            text: "determine displacement given velocity in linear motion problems"
+                        }
+                    ] 
+                },
+                { 
+                    value: "3.3.2", 
+                    text: "Fundamental theorem of calculus and definite integrals", 
+                    descriptors: [
+                        {
+                            value: "3.3.2.1",
+                            text: "examine the area problem, and use sums of the form ∑𝑖 𝑓(𝑥𝑖)𝛿𝑥𝑖, to estimate the area under the curve 𝑦 = 𝑓(𝑥)"
+                        },
+                        {
+                            value: "3.3.2.2",
+                            text: "use the trapezoidal rule for the approximation of the value of a definite integral numerically"
+                        },
+                        {
+                            value: "3.3.2.3",
+                            text: "interpret the definite integral ∫ 𝑓(𝑥)𝑑𝑥 as area under the curve 𝑦 = 𝑓(𝑥) if 𝑓(𝑥) > 0"
+                        },
+                        {
+                            value: "3.3.2.4",
+                            text: "recognise the definite integral ∫ 𝑓(𝑥)𝑑𝑥 as a limit of sums of the form ∑𝑖 𝑓(𝑥𝑖)𝛿𝑥𝑖"
+                        },
+                        {
+                            value: "3.3.2.5",
+                            text: "understand the formula ∫ 𝑓(𝑥)𝑑𝑥 = 𝐹(𝑏) − 𝐹(𝑎) and use it to calculate definite integrals"
+                        }
+                    ] 
+                },
+                { 
+                    value: "3.3.3", 
+                    text: "Applications of integration", 
+                    descriptors: [
+                        {
+                            value: "3.3.3.1",
+                            text: "calculate the area under a curve"
+                        },
+                        {
+                            value: "3.3.3.2",
+                            text: "calculate total change by integrating instantaneous or marginal rate of change"
+                        },
+                        {
+                            value: "3.3.3.3",
+                            text: "calculate the area between curves with and without technology"
+                        },
+                        {
+                            value: "3.3.3.4",
+                            text: "determine displacements given acceleration and initial values of displacement and velocity"
+                        }
+                    ] 
+                }
+            ]
+        }
+    ],
+    4: [
+        {
+            value: "4.1", 
+            text: "Topic 1: Further differentiation and applications 3", 
+            subtopics: [
+                { 
+                    value: "4.1.1", 
+                    text: "The second derivative and applications of differentiation", 
+                    descriptors: [
+                        {
+                            value: "4.1.1.1",
+                            text: "understand the concept of the second derivative as the rate of change of the first derivative function"
+                        },
+                        {
+                            value: "4.1.1.2",
+                            text: "recognise acceleration as the second derivative of displacement position with respect to time"
+                        },
+                        {
+                            value: "4.1.1.3",
+                            text: "understand the concepts of concavity and points of inflection and their relationship with the second derivative"
+                        },
+                        {
+                            value: "4.1.1.4",
+                            text: "understand and use the second derivative test for finding local maxima and minima"
+                        },
+                        {
+                            value: "4.1.1.5",
+                            text: "sketch the graph of a function using first and second derivatives to locate stationary points and points of inflection"
+                        },
+                        {
+                            value: "4.1.1.6",
+                            text: "solve optimisation problems from a wide variety of fields using first and second derivatives, where the function to be optimised is both given and developed"
+                        }
+                    ] 
+                }
+            ]
+        },
+        {
+            value: "4.2", 
+            text: "Topic 2: Trigonometric functions 2", 
+            subtopics: [
+                { 
+                    value: "4.2.1", 
+                    text: "Cosine and sine rules", 
+                    descriptors: [
+                        {
+                            value: "4.2.1.1",
+                            text: "recall sine, cosine and tangent as ratios of side lengths in right-angled triangles"
+                        },
+                        {
+                            value: "4.2.1.2",
+                            text: "understand the unit circle definition of cos(𝜃), sin(𝜃) and tan(𝜃) and periodicity using degrees and radians"
+                        },
+                        {
+                            value: "4.2.1.3",
+                            text: "establish and use the sine (ambiguous case is required) and cosine rules and the formula area = 1/2 𝑏𝑐 sin(𝐴) for the area of a triangle"
+                        },
+                        {
+                            value: "4.2.1.4",
+                            text: "construct mathematical models using the sine and cosine rules in two- and three-dimensional contexts (including bearings in two-dimensional context) and use the model to solve problems; verify and evaluate the usefulness of the model using qualitative statements and quantitative analysis"
+                        }
+                    ] 
+                }
+            ]
+        },
+        {
+            value: "4.3", 
+            text: "Topic 3: Discrete random variables 2", 
+            subtopics: [
+                { 
+                    value: "4.3.1", 
+                    text: "Bernoulli distributions", 
+                    descriptors: [
+                        {
+                            value: "4.3.1.1",
+                            text: "use a Bernoulli random variable as a model for two-outcome situations"
+                        },
+                        {
+                            value: "4.3.1.2",
+                            text: "identify contexts suitable for modelling by Bernoulli random variables"
+                        },
+                        {
+                            value: "4.3.1.3",
+                            text: "recognise and determine the mean 𝑝 and variance 𝑝(1 − 𝑝) of the Bernoulli distribution with parameter 𝑝"
+                        },
+                        {
+                            value: "4.3.1.4",
+                            text: "use Bernoulli random variables and associated probabilities to model data and solve practical problems"
+                        }
+                    ] 
+                },
+                { 
+                    value: "4.3.2", 
+                    text: "Binomial distributions", 
+                    descriptors: [
+                        {
+                            value: "4.3.2.1",
+                            text: "understand the concepts of Bernoulli trials and the concept of a binomial random variable as the number of ‘successes’ in 𝑛 independent Bernoulli trials, with the same probability of success 𝑝 in each trial"
+                        },
+                        {
+                            value: "4.3.2.2",
+                            text: "identify contexts suitable for modelling by binomial random variables"
+                        },
+                        {
+                            value: "4.3.2.3",
+                            text: "determine and use the probabilities 𝑃(𝑋 = 𝑟) = ... associated with the binomial distribution with parameters 𝑛 and 𝑝"
+                        },
+                        {
+                            value: "4.3.2.4",
+                            text: "calculate the mean 𝑛𝑝 and variance 𝑛𝑝(1 − 𝑝) of a binomial distribution using technology and algebraic methods"
+                        },
+                        {
+                            value: "4.3.2.5",
+                            text: "identify contexts suitable to model binomial distributions and associated probabilities to solve practical problems, including the language of ‘at most’ and ‘at least’"
+                        }
+                    ] 
+                }
+            ]
+        },
+        {
+            value: "4.4", 
+            text: "Topic 4: Continuous random variables and the normal distribution", 
+            subtopics: [
+                { 
+                    value: "4.4.1", 
+                    text: "General continuous random variables", 
+                    descriptors: [
+                        {
+                            value: "4.4.1.1",
+                            text: "use relative frequencies and histograms obtained from data to estimate probabilities associated with a continuous random variable"
+                        },
+                        {
+                            value: "4.4.1.2",
+                            text: "understand the concepts of a probability density function, cumulative distribution function, and probabilities associated with a continuous random variable given by integrals; examine simple types of continuous random variables and use them in appropriate contexts"
+                        },
+                        {
+                            value: "4.4.1.3",
+                            text: "calculate the expected value, variance and standard deviation of a continuous random variable in simple cases"
+                        },
+                        {
+                            value: "4.4.1.4",
+                            text: "understand standardised normal variables (z-values, z-scores) and use these to compare samples"
+                        }
+                    ]
+                },
+                { 
+                    value: "4.4.2", 
+                    text: "Normal distributions", 
+                    descriptors: [
+                        {
+                            value: "4.4.2.1",
+                            text: "identify contexts, such as naturally occurring variations, that are suitable for modelling by normal random variables"
+                        },
+                        {
+                            value: "4.4.2.2",
+                            text: "recognise features of the graph of the probability density function of the normal distribution with mean 𝜇 and standard deviation 𝜎 and the use of the standard normal distribution"
+                        },
+                        {
+                            value: "4.4.2.3",
+                            text: "calculate probabilities and quantiles associated with a given normal distribution using technology and use these to solve practical problems"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            value: "4.5", 
+            text: "Topic 5: Interval estimates for proportions", 
+            subtopics: [
+                {
+                    value: "4.5.1",
+                    text: "Random sampling",
+                    descriptors: [
+                        {
+                            value: "4.5.1.1",
+                            text: "understand the concept of a random sample"
+                        },
+                        {
+                            value: "4.5.1.2",
+                            text: "discuss sources of bias in samples, and procedures to ensure randomness"
+                        },
+                        {
+                            value: "4.5.1.3",
+                            text: "investigate the variability of random samples from various types of distributions, including uniform, normal and Bernoulli, using graphical displays of real and simulated data"
+                        }
+                    ]
+                },
+                {
+                    value: "4.5.2",
+                    text: "Sampling proportions",
+                    descriptors: [
+                        {
+                            value: "4.5.2.1",
+                            text: "understand the concept of the sample proportion p̂ as a random variable whose value varies between samples, and the formulas for the mean 𝑝 and standard deviation sqrt((𝑝(1 − 𝑝)/𝑛) of the sample proportion p̂"
+                        },
+                        {
+                            value: "4.5.2.2",
+                            text: "consider the approximate normality of the distribution of p̂ for large samples"
+                        },
+                        {
+                            value: "4.5.2.3",
+                            text: "simulate repeated random sampling, for a variety of values of p and a range of sample sizes, to illustrate the distribution of p̂ and the approximate standard normality of ... where the closeness of the approximation depends on both 𝑛 and 𝑝"
+                        }
+                    ]
+                },
+                {
+                    value: "4.5.3",
+                    text: "Confidence intervals for proportions",
+                    descriptors: [
+                        {
+                            value: "4.5.3.1",
+                            text: "understand the concept of an interval estimate for a parameter associated with a random variable"
+                        },
+                        {
+                            value: "4.5.3.2",
+                            text: "use the approximate confidence interval (..., ...), as an interval estimate for 𝑝,where 𝑧 is the appropriate quantile for the standard normal distribution"
+                        },
+                        {
+                            value: "4.5.3.3",
+                            text: "define the approximate margin of error 𝐸 = ... and understand the trade-off between margin of error and level of confidence"
+                        },
+                        {
+                            value: "4.5.3.4",
+                            text: "use simulation to illustrate variations in confidence intervals between samples and to show that most but not all confidence intervals contain 𝑝."
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+};
+
+
+
+        function populateTopics() {
+            const unit = document.getElementById('unit').value;
+            const topicSelect = document.getElementById('topic');
+            topicSelect.innerHTML = '<option value="">-- All Available --</option>';
+
+            if (unit && topics[unit]) {
+                topics[unit].forEach(topic => {
+                    const option = document.createElement('option');
+                    option.value = topic.value;
+                    option.textContent = topic.text;
+                    topicSelect.appendChild(option);
+                });
+            }
+
+            document.getElementById('subtopic').innerHTML = '<option value="">-- All Available --</option>';
+            document.getElementById('descriptor').innerHTML = '<option value="">-- All Available --</option>';
+        }
+
+        function populateSubtopics() {
+            const unit = document.getElementById('unit').value;
+            const topic = document.getElementById('topic').value;
+            const subtopicSelect = document.getElementById('subtopic');
+
+            subtopicSelect.innerHTML = '<option value="">-- All Available --</option>';
+
+            if (unit && topic && topics[unit]) {
+                const selectedTopic = topics[unit].find(t => t.value === topic);
+                if (selectedTopic && selectedTopic.subtopics) {
+                    selectedTopic.subtopics.forEach(subtopic => {
+                        const option = document.createElement('option');
+                        option.value = subtopic.value;
+                        option.textContent = subtopic.text;
+                        subtopicSelect.appendChild(option);
+                    });
+                }
+            }
+
+            document.getElementById('descriptor').innerHTML = '<option value="">-- All Available --</option>';
+        }
+
+       function populateDescriptors() {
+            const unit = document.getElementById('unit').value;
+            const topic = document.getElementById('topic').value;
+            const subtopic = document.getElementById('subtopic').value;
+            const descriptorSelect = document.getElementById('descriptor');
+
+            descriptorSelect.innerHTML = '<option value="">-- All Available --</option>';
+
+            if (unit && topic && subtopic && topics[unit]) {
+                const selectedTopic = topics[unit].find(t => t.value === topic);
+                const selectedSubtopic = selectedTopic.subtopics.find(s => s.value === subtopic);
+                if (selectedSubtopic && selectedSubtopic.descriptors) {
+                    selectedSubtopic.descriptors.forEach(descriptor => {
+                        const option = document.createElement('option');
+                        option.value = descriptor.value;
+                        option.textContent = descriptor.text;
+                        descriptorSelect.appendChild(option);
+                    });
+                }
+            }
+        }
+
+
+        let currentPage = 0; // Tracks the current page of results
+        const resultsPerPage = 10; // Number of results to load per page
+
+        function filterQuestions() {
+            const unit = document.getElementById('unit').value;
+            const topic = document.getElementById('topic').value;
+            const subtopic = document.getElementById('subtopic').value;
+            const descriptor = document.getElementById('descriptor').value;
+            const difficulty = document.getElementById('difficulty').value;
+            const tech = document.getElementById('tech').value;
+            const format = document.getElementById('format').value;
+            const searchText = document.getElementById('searchText').value.toLowerCase();
+
+            const resultsDiv = document.getElementById('results');
+            resultsDiv.innerHTML = '<h3>Filtered Results</h3>';
+            currentPage = 0;
+
+            // Fetch JSON data (replace the URL with the actual path to your JSON file)
+            fetch('https://manos-200.github.io/SortedQuestionsDatabase/questions.json')
+                .then(response => response.json())
+                .then(data => {
+                    const filteredResults = data.filter(q =>
+                        (!unit || q.unit.includes(unit)) &&
+                        (!topic || q.topic.includes(topic)) &&
+                        (!subtopic || q.subtopic.includes(subtopic)) &&
+                        (!descriptor || q.descriptor.includes(descriptor)) &&
+                        (!difficulty || q.difficulty.includes(difficulty)) &&
+                        (!tech || q.tech.includes(tech)) &&
+                        (!format || q.format.includes(format))
+                        (!searchText || q.question.toLowerCase().includes(searchText))
+                    );
+
+                    if (filteredResults.length === 0) {
+                        resultsDiv.innerHTML += '<p>No questions match the selected filters.</p>';
+                    } else {
+                        displayResults(filteredResults, resultsDiv);
+                    }
+                })
+                .catch(error => {
+                    console.error('Error fetching JSON:', error);
+                    resultsDiv.innerHTML += '<p>Error with JSON file</p>';
+                });
+        }
+
+function displayResults(results, resultsDiv) {
+    const start = currentPage * resultsPerPage;
+    const end = start + resultsPerPage;
+
+
+    // Get the current slice of results to display
+    const currentResults = results.slice(start, end);
+
+    currentResults.forEach(q => {
+        const imageUrl = `questions/${q.question}.png`;
+        resultsDiv.innerHTML += `<div class="result-item">
+            <div class="result-item-content">
+                <img src="${imageUrl}" alt="Question Image for ${q.question}" 
+                    class="result-image" 
+                    onerror="this.onerror=null; this.src=''; this.alt='Error. Could not load image';">
+                <div class="result-details">
+                    <p> <strong>Difficulty:</strong> ${q.difficulty} <br> </p>
+                    <p> <strong>Technology:</strong> ${q.tech === 'TF' ? 'Tech Free' : 'Tech Active'} <br> </p>
+                    <p> <strong>Descriptor(s):</strong> ${q.descriptor.join(', ')} </p>
+                </div>
+            </div>
+            <hr class="divider">  <!-- Adding a divider line between results -->
+        </div>`;
+    });
+
+    // Check if there are more results to load
+    const loadMoreButton = document.getElementById('loadMoreButton');
+    let resultsLabel = document.getElementById('resultsLabel'); // Check if the label already exists
+
+    if (results.length > end) {
+            const loadMoreButton = document.createElement('button');
+            loadMoreButton.id = 'loadMoreButton';
+            loadMoreButton.innerText = 'Load More';
+            loadMoreButton.classList.add("button");
+            loadMoreButton.classList.add("load-more");
+            loadMoreButton.onclick = () => {
+                currentPage++;
+                loadMoreButton.remove();
+                displayResults(results, resultsDiv);
+            };
+            resultsDiv.appendChild(loadMoreButton);
+    }
+    updateResultsLabel();
+
+    // Function to move the label to the end of the resultsDiv
+    function updateResultsLabel() {
+
+        // Create the label if it doesn't already exist
+        if (!resultsLabel) {
+            resultsLabel = document.createElement('p');
+            resultsLabel.id = 'resultsLabel';
+            resultsLabel.style.textAlign = 'center'; // Center the text
+            resultsLabel.style.fontSize = '14px'; // Adjust text size
+            resultsLabel.style.color = '#666'; // Light gray color
+            resultsLabel.style.marginTop = '10px'; // Add space above the label
+            resultsDiv.appendChild(resultsLabel); // Initially append the label to resultsDiv
+        }
+
+        if (end >= results.length) { // Ensure we don't get stupid things like "70 of 67 results"
+            resultsLabel.innerText = `Showing ${results.length} of ${results.length} results`;
+        } else {
+            resultsLabel.innerText = `Showing ${end} of ${results.length} results`;
+        }
+        
+
+        if (resultsLabel) {
+            resultsDiv.appendChild(resultsLabel); // Re-append to move it to the end
+        }
+    }
+}
+
+
+
+
+
+
+    </script>
+</body>
+<footer>
+    <p xmlns:cc="http://creativecommons.org/ns#" >Material from QCAA is &copy State of Queensland (<a href="https://www.qcaa.qld.edu.au/copyright">QCAA<a/>) 2024 <a href="https://creativecommons.org/licenses/by-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-ND 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1" alt=""></a></p>
+    <p xmlns:cc="http://creativecommons.org/ns#" >The rest of this work is licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""></a></p>
+
+</footer>
+</html>

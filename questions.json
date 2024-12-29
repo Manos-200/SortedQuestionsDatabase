@@ -8,7 +8,8 @@
 "unit": ["4"],
 "topic": ["4.5"],
 "subtopic": ["4.5.1"],
-"descriptor": ["4.5.1.1"]
+"descriptor": ["4.5.1.1"],
+"text": "Blah blah"
 },
 {
 "question": "00002",
@@ -19,7 +20,8 @@
 "unit": ["3"],
 "topic": ["3.3"],
 "subtopic": ["3.3.1", "3.3.2", "3.3.3"],
-"descriptor": ["3.3.1.2", "3.3.1.3", "3.3.1.4", "3.3.1.7", "3.3.1.11", "3.3.2.5", "3.3.3.2", "3.3.3.4"]
+"descriptor": ["3.3.1.2", "3.3.1.3", "3.3.1.4", "3.3.1.7", "3.3.1.11", "3.3.2.5", "3.3.3.2", "3.3.3.4"],
+"text": "The vertical acceleration of The Giant Drop at Dreamworld is given by the function a(t). Given the ride starts from rest, determine the ride's displacement in its third second of motion"
 },
 {
 "question": "00003",
@@ -30,7 +32,8 @@
 "unit": ["3"],
 "topic": ["3.3"],
 "subtopic": ["3.3.3"],
-"descriptor": ["3.3.3.3"]
+"descriptor": ["3.3.3.3"],
+"text": "blah blah"
 },
 {
 "question": "00004",
@@ -41,29 +44,20 @@
 "unit": ["4"],
 "topic": ["4.4"],
 "subtopic": ["4.4.1"],
-"descriptor": ["4.4.1.1"]
+"descriptor": ["4.4.1.1"],
+"text": "blah blah"
 },
 {
 "question": "00005",
-"marks": "4",
-"difficulty": ["CF"],
-"tech": ["TA"],
+"marks": "6",
+"difficulty": ["SF", "CF"],
+"tech": ["TF", "TA"],
 "format": ["SR"],
 "unit": ["3"],
 "topic": ["3.1", "3.2"],
 "subtopic": ["3.1.1", "3.2.2"],
-"descriptor": ["3.1.1.1", "3.1.1.5", "3.2.2.1", "3.2.2.2"]
-},
-{
-"question": "00006",
-"marks": "2",
-"difficulty": ["SF"],
-"tech": ["TF"],
-"format": ["SR"],
-"unit": ["3"],
-"topic": ["3.2"],
-"subtopic": ["3.2.2"],
-"descriptor": ["3.2.2.3", "3.2.2.4"]
+"descriptor": ["3.1.1.1", "3.1.1.5", "3.2.2.1", "3.2.2.2", "3.2.2.3", "3.2.2.4"],
+"text": "blah blah"
 },
 {
 "question": "00007",
@@ -74,7 +68,8 @@
 "unit": ["4"],
 "topic": ["4.2"],
 "subtopic": ["4.2.1"],
-"descriptor": ["4.2.1.3"]
+"descriptor": ["4.2.1.3"],
+"text": "blah blah"
 },
 {
 "question": "00008",
@@ -85,7 +80,8 @@
 "unit": ["4"],
 "topic": ["4.3", "4.4"],
 "subtopic": ["4.3.2", "4.4.2"],
-"descriptor": ["4.3.2.5", "4.4.2.3"]
+"descriptor": ["4.3.2.5", "4.4.2.3"],
+"text": "blah blah"
 },
 {
 "question": "00009",
@@ -96,7 +92,8 @@
 "unit": ["4"],
 "topic": ["4.3"],
 "subtopic": ["4.3.1"],
-"descriptor": ["4.3.1.1", "4.3.1.2", "4.3.1.3"]
+"descriptor": ["4.3.1.1", "4.3.1.2", "4.3.1.3"],
+"text": "blah blah"
 },
 {
 "question": "00010",
@@ -107,7 +104,8 @@
 "unit": ["3", "4"],
 "topic": ["3.2", "4.1"],
 "subtopic": ["3.2.2", "3.2.4", "4.1.1"],
-"descriptor": ["3.2.2.1", "3.2.2.2", "3.2.2.3", "3.2.4.1", "4.1.1.4"]
+"descriptor": ["3.2.2.1", "3.2.2.2", "3.2.2.3", "3.2.4.1", "4.1.1.4"],
+"text": "blah blah"
 },
 {
 "question": "00011",
@@ -118,7 +116,8 @@
 "unit": ["3", "4"],
 "topic": ["3.2", "4.1"],
 "subtopic": ["3.2.3", "3.2.4", "4.1.1"],
-"descriptor": ["3.2.3.1", "3.2.4.1", "4.1.1.1"]
+"descriptor": ["3.2.3.1", "3.2.4.1", "4.1.1.1"],
+"text": "blah blah"
 },
 {
 "question": "00012",
@@ -129,40 +128,20 @@
 "unit": ["3"],
 "topic": ["3.3"],
 "subtopic": ["3.3.1", "3.3.2"],
-"descriptor": ["3.3.1.11", "3.3.2.2"]
+"descriptor": ["3.3.1.11", "3.3.2.2"],
+"text": "blah blah"
 },
 {
 "question": "00013",
-"marks": "2",
+"marks": "5",
 "difficulty": ["SF"],
 "tech": ["TA"],
 "format": ["SR"],
 "unit": ["4"],
-"topic": ["4.5"],
-"subtopic": ["4.5.3"],
-"descriptor": ["4.5.3.2"]
-},
-{
-"question": "00014",
-"marks": "1",
-"difficulty": ["SF"],
-"tech": ["TA"],
-"format": ["SR"],
-"unit": ["4"],
-"topic": ["4.5"],
-"subtopic": ["4.5.3"],
-"descriptor": ["4.5.3.1", "4.5.3.4"]
-},
-{
-"question": "00015",
-"marks": "2",
-"difficulty": ["SF"],
-"tech": ["TA"],
-"format": ["SR"],
-"unit": ["4"],
-"topic": ["4.4", "4.5"],
-"subtopic": ["4.4.2", "4.5.2"],
-"descriptor": ["4.4.2.3", "4.5.2.2"]
+"topic": ["4.5", "4.4"],
+"subtopic": ["4.5.3", "4.4.2", "4.5.2"],
+"descriptor": ["4.5.3.1", "4.5.3.2", "4.4.2.3", "4.5.2.2", "4.5.3.1", "4.5.3.4"],
+"text": "blah blah"
 },
 {
 "question": "00016",
@@ -173,7 +152,8 @@
 "unit": ["4"],
 "topic": ["4.4"],
 "subtopic": ["4.4.1", "4.4.2"],
-"descriptor": ["4.4.1.4", "4.4.2.1"]
+"descriptor": ["4.4.1.4", "4.4.2.1"],
+"text": "blah blah"
 },
 {
 "question": "00017",
@@ -184,7 +164,8 @@
 "unit": ["3"],
 "topic": ["3.1"],
 "subtopic": ["3.1.1"],
-"descriptor": ["3.1.1.3"]
+"descriptor": ["3.1.1.3"],
+"text": "blah blah"
 },
 {
 "question": "00018",
@@ -195,7 +176,8 @@
 "unit": ["3", "4"],
 "topic": ["3.2", "4.2"],
 "subtopic": ["3.2.3", "3.2.4", "4.2.1"],
-"descriptor": ["3.2.3.2", "3.2.3.3", "3.2.4.1", "4.2.1.2"]
+"descriptor": ["3.2.3.2", "3.2.3.3", "3.2.4.1", "4.2.1.2"],
+"text": "blah blah"
 },
 {
 "question": "00019",
@@ -206,29 +188,20 @@
 "unit": ["3"],
 "topic": ["3.2"],
 "subtopic": ["3.2.1"],
-"descriptor": ["3.2.1.2"]
+"descriptor": ["3.2.1.2"],
+"text": "blah blah"
 },
 {
 "question": "00020",
-"marks": "4",
+"marks": "8",
 "difficulty": ["SF"],
 "tech": ["TF"],
 "format": ["SR"],
 "unit": ["4"],
 "topic": ["4.3"],
 "subtopic": ["4.3.2"],
-"descriptor": ["4.3.2.1", "4.3.2.2"]
-},
-{
-"question": "00021",
-"marks": "4",
-"difficulty": ["SF"],
-"tech": ["TF"],
-"format": ["SR"],
-"unit": ["4"],
-"topic": ["4.3"],
-"subtopic": ["4.3.2"],
-"descriptor": ["4.3.2.3", "4.3.2.5"]
+"descriptor": ["4.3.2.1", "4.3.2.2", "4.3.2.3", "4.3.2.5"],
+"text": "blah blah"
 },
 {
 "question": "00022",
@@ -239,7 +212,8 @@
 "unit": ["3"],
 "topic": ["3.3"],
 "subtopic": ["3.3.1"],
-"descriptor": ["3.3.1.2", "3.3.1.3", "3.3.1.8", "3.3.1.9"]
+"descriptor": ["3.3.1.2", "3.3.1.3", "3.3.1.8", "3.3.1.9"],
+"text": "blah blah"
 },
 {
 "question": "00023",
@@ -250,7 +224,8 @@
 "unit": ["3"],
 "topic": ["3.2"],
 "subtopic": ["3.2.3", "3.2.4"],
-"descriptor": ["3.2.3.1", "3.2.4.1"]
+"descriptor": ["3.2.3.1", "3.2.4.1"],
+"text": "blah blah"
 },
 {
 "question": "00024",
@@ -261,7 +236,8 @@
 "unit": ["3"],
 "topic": ["3.2"],
 "subtopic": ["3.2.1", "3.2.2"],
-"descriptor": ["3.2.1.3", "3.2.1.4", "3.2.2.2"]
+"descriptor": ["3.2.1.3", "3.2.1.4", "3.2.2.2"],
+"text": "blah blah"
 },
 {
 "question": "00025",
@@ -272,51 +248,20 @@
 "unit": ["3"],
 "topic": ["3.3"],
 "subtopic": ["3.3.1", "3.3.2", "3.3.3"],
-"descriptor": ["3.3.1.3", "3.3.1.7", "3.3.2.5", "3.3.3.3"]
+"descriptor": ["3.3.1.3", "3.3.1.7", "3.3.2.5", "3.3.3.3"],
+"text": "blah blah"
 },
 {
 "question": "00026",
-"marks": "3",
+"marks": "11",
 "difficulty": ["SF"],
-"tech": ["TF"],
+"tech": ["TF", "TA"],
 "format": ["SR"],
 "unit": ["3", "4"],
 "topic": ["3.3", "4.4"],
 "subtopic": ["3.3.1", "3.3.2", "4.4.1"],
-"descriptor": ["3.3.1.3", "3.3.2.5", "4.4.1.2"]
-},
-{
-"question": "00027",
-"marks": "2",
-"difficulty": ["SF"],
-"tech": ["TF"],
-"format": ["SR"],
-"unit": ["3", "4"],
-"topic": ["3.3", "4.4"],
-"subtopic": ["3.3.1", "3.3.2", "4.4.1"],
-"descriptor": ["3.3.1.3", "3.3.2.5", "4.4.1.2"]
-},
-{
-"question": "00028",
-"marks": "3",
-"difficulty": ["SF"],
-"tech": ["TF"],
-"format": ["SR"],
-"unit": ["3", "4"],
-"topic": ["3.3", "4.4"],
-"subtopic": ["3.3.1", "3.3.2", "4.4.1"],
-"descriptor": ["3.3.1.3", "3.3.2.5", "4.4.1.3"]
-},
-{
-"question": "00029",
-"marks": "3",
-"difficulty": ["SF"],
-"tech": ["TA"],
-"format": ["SR"],
-"unit": ["3", "4"],
-"topic": ["3.3", "4.4"],
-"subtopic": ["3.3.1", "3.3.2", "4.4.1"],
-"descriptor": ["3.3.1.3", "3.3.2.5", "4.4.1.3"]
+"descriptor": ["3.3.1.3", "3.3.2.5", "4.4.1.2", "4.4.1.3"],
+"text": "blah blah"
 },
 {
 "question": "00030",
@@ -327,29 +272,20 @@
 "unit": ["4"],
 "topic": ["4.2"],
 "subtopic": ["4.2.1"],
-"descriptor": ["4.2.1.3"]
-},
-{
-"question": "00031",
-"marks": "3",
-"difficulty": ["SF"],
-"tech": ["TF"],
-"format": ["SR"],
-"unit": ["3"],
-"topic": ["3.3"],
-"subtopic": ["3.3.2"],
-"descriptor": ["3.3.2.1"]
+"descriptor": ["4.2.1.3"],
+"text": "blah blah"
 },
 {
 "question": "00032",
-"marks": "4",
+"marks": "7",
 "difficulty": ["SF"],
 "tech": ["TF"],
 "format": ["SR"],
 "unit": ["3"],
 "topic": ["3.3"],
 "subtopic": ["3.3.1", "3.3.2"],
-"descriptor": ["3.3.1.6", "3.3.1.7", "3.3.1.8", "3.3.2.4"]
+"descriptor": ["3.3.1.6", "3.3.1.7", "3.3.1.8", "3.3.2.4", "3.3.2.1"],
+"text": "blah blah"
 },
 {
 "question": "00033",
@@ -360,7 +296,8 @@
 "unit": ["3"],
 "topic": ["3.2"],
 "subtopic": ["3.2.1"],
-"descriptor": ["3.2.1.1"]
+"descriptor": ["3.2.1.1"],
+"text": "blah blah"
 },
 {
 "question": "00034",
@@ -371,7 +308,8 @@
 "unit": ["4"],
 "topic": ["4.5"],
 "subtopic": ["4.5.2"],
-"descriptor": ["4.5.2.1"]
+"descriptor": ["4.5.2.1"],
+"text": "blah blah"
 },
 {
 "question": "00035",
@@ -382,18 +320,8 @@
 "unit": ["4"],
 "topic": ["4.3"],
 "subtopic": ["4.3.1"],
-"descriptor": ["4.3.1.1", "4.3.1.2", "4.3.1.3"]
-},
-{
-"question": "00036",
-"marks": "2",
-"difficulty": ["SF"],
-"tech": ["TF"],
-"format": ["SR"],
-"unit": ["4"],
-"topic": ["4.3"],
-"subtopic": ["4.3.1"],
-"descriptor": ["4.3.1.4"]
+"descriptor": ["4.3.1.1", "4.3.1.2", "4.3.1.3", "4.3.1.4"],
+"text": "blah blah"
 },
 {
 "question": "00037",
@@ -404,7 +332,8 @@
 "unit": ["4"],
 "topic": ["4.4"],
 "subtopic": ["4.4.1"],
-"descriptor": ["4.4.1.2"]
+"descriptor": ["4.4.1.2"],
+"text": "blah blah"
 },
 {
 "question": "00038",
@@ -415,7 +344,8 @@
 "unit": ["4"],
 "topic": ["4.4"],
 "subtopic": ["4.4.1", "4.4.2"],
-"descriptor": ["4.4.1.4", "4.4.2.1", "4.4.2.2", "4.4.2.3"]
+"descriptor": ["4.4.1.4", "4.4.2.1", "4.4.2.2", "4.4.2.3"],
+"text": "blah blah"
 },
 {
 "question": "00039",
@@ -426,7 +356,8 @@
 "unit": ["3", "4"],
 "topic": ["3.2", "4.1"],
 "subtopic": ["3.2.1", "3.2.4", "4.1.1"],
-"descriptor": ["3.2.1.4", "3.2.4.1", "4.1.1.2"]
+"descriptor": ["3.2.1.4", "3.2.4.1", "4.1.1.2"],
+"text": "blah blah"
 },
 {
 "question": "00040",
@@ -437,7 +368,8 @@
 "unit": ["3", "4"],
 "topic": ["3.2", "4.1", "4.2"],
 "subtopic": ["3.2.3", "3.2.4", "4.1.1", "4.2.1"],
-"descriptor": ["3.2.3.1", "3.2.4.1", "4.1.1.4", "4.1.1.6", "4.2.1.1"]
+"descriptor": ["3.2.3.1", "3.2.4.1", "4.1.1.4", "4.1.1.6", "4.2.1.1"],
+"text": "blah blah"
 },
 {
 "question": "00041",
@@ -448,7 +380,8 @@
 "unit": ["3"],
 "topic": ["3.1"],
 "subtopic": ["3.1.1"],
-"descriptor": ["3.1.1.4"]
+"descriptor": ["3.1.1.4"],
+"text": "blah blah"
 },
 {
 "question": "00042",
@@ -459,7 +392,8 @@
 "unit": ["3"],
 "topic": ["3.1", "3.3"],
 "subtopic": ["3.1.1", "3.3.1"],
-"descriptor": ["3.1.1.1", "3.3.1.2", "3.3.1.5"]
+"descriptor": ["3.1.1.1", "3.3.1.2", "3.3.1.5"],
+"text": "blah blah"
 },
 {
 "question": "00043",
@@ -470,29 +404,8 @@
 "unit": ["4"],
 "topic": ["4.3"],
 "subtopic": ["4.3.2"],
-"descriptor": ["4.3.2.2", "4.3.2.4"]
-},
-{
-"question": "00044",
-"marks": "2",
-"difficulty": ["SF"],
-"tech": ["TA"],
-"format": ["SR"],
-"unit": ["4"],
-"topic": ["4.3"],
-"subtopic": ["4.3.2"],
-"descriptor": ["4.3.2.2", "4.3.2.4"]
-},
-{
-"question": "00045",
-"marks": "3",
-"difficulty": ["SF"],
-"tech": ["TA"],
-"format": ["SR"],
-"unit": ["4"],
-"topic": ["4.3"],
-"subtopic": ["4.3.2"],
-"descriptor": ["4.3.2.2", "4.3.2.3", "4.3.2.4", "4.3.2.5"]
+"descriptor": ["4.3.2.2", "4.3.2.3", "4.3.2.4", "4.3.2.5"],
+"text": "blah blah"
 },
 {
 "question": "00046",
@@ -503,7 +416,8 @@
 "unit": ["4"],
 "topic": ["4.5"],
 "subtopic": ["4.5.3"],
-"descriptor": ["4.5.3.1", "4.5.3.4"]
+"descriptor": ["4.5.3.1", "4.5.3.4"],
+"text": "blah blah"
 },
 {
 "question": "00047",
@@ -514,7 +428,8 @@
 "unit": ["4"],
 "topic": ["4.5"],
 "subtopic": ["4.5.3"],
-"descriptor": ["4.5.3.3"]
+"descriptor": ["4.5.3.3"],
+"text": "blah blah"
 },
 {
 "question": "00048",
@@ -525,7 +440,8 @@
 "unit": ["3"],
 "topic": ["3.1", "3.2"],
 "subtopic": ["3.1.1", "3.2.2"],
-"descriptor": ["3.1.1.1", "3.2.2.1", "3.2.2.3"]
+"descriptor": ["3.1.1.1", "3.2.2.1", "3.2.2.3"],
+"text": "blah blah"
 },
 {
 "question": "00049",
@@ -536,7 +452,8 @@
 "unit": ["4"],
 "topic": ["4.2"],
 "subtopic": ["4.2.1"],
-"descriptor": ["4.2.1.3", "4.2.1.4"]
+"descriptor": ["4.2.1.3", "4.2.1.4"],
+"text": "blah blah"
 },
 {
 "question": "00050",
@@ -547,7 +464,8 @@
 "unit": ["3"],
 "topic": ["3.1"],
 "subtopic": ["3.1.1"],
-"descriptor": ["3.1.1.2"]
+"descriptor": ["3.1.1.2"],
+"text": "blah blah"
 },
 {
 "question": "00051",
@@ -558,7 +476,8 @@
 "unit": ["3"],
 "topic": ["3.3"],
 "subtopic": ["3.3.1", "3.3.2", "3.3.3"],
-"descriptor": ["3.3.1.3", "3.3.2.3", "3.3.2.5", "3.3.3.1"]
+"descriptor": ["3.3.1.3", "3.3.2.3", "3.3.2.5", "3.3.3.1"],
+"text": "blah blah"
 },
 {
 "question": "00052",
@@ -569,7 +488,8 @@
 "unit": ["3"],
 "topic": ["3.1"],
 "subtopic": ["3.1.1"],
-"descriptor": ["3.1.1.1", "3.1.1.6"]
+"descriptor": ["3.1.1.1", "3.1.1.6"],
+"text": "blah blah"
 },
 {
 "question": "00053",
@@ -580,7 +500,8 @@
 "unit": ["3"],
 "topic": ["3.2"],
 "subtopic": ["3.2.1", "3.2.4"],
-"descriptor": ["3.2.1.4", "3.2.4.1"]
+"descriptor": ["3.2.1.4", "3.2.4.1"],
+"text": "blah blah"
 },
 {
 "question": "00054",
@@ -591,7 +512,8 @@
 "unit": ["4"],
 "topic": ["4.1"],
 "subtopic": ["4.1.1"],
-"descriptor": ["4.1.1.3", "4.1.1.5"]
+"descriptor": ["4.1.1.3", "4.1.1.5"],
+"text": "blah blah"
 },
 {
 "question": "00055",
@@ -602,7 +524,8 @@
 "unit": ["4"],
 "topic": ["4.2"],
 "subtopic": ["4.2.1"],
-"descriptor": ["4.2.1.3"]
+"descriptor": ["4.2.1.3"],
+"text": "blah blah"
 },
 {
 "question": "00056",
@@ -613,7 +536,8 @@
 "unit": ["3"],
 "topic": ["3.1", "3.2", "3.3"],
 "subtopic": ["3.1.1", "3.2.1", "3.2.2", "3.2.4", "3.3.1", "3.3.2"],
-"descriptor": ["3.1.1.1", "3.2.1.4", "3.2.2.1", "3.2.2.2", "3.2.4.1", "3.3.1.1", "3.3.1.2", "3.3.1.4", "3.3.1.7", "3.3.1.10", "3.3.2.5"]
+"descriptor": ["3.1.1.1", "3.2.1.4", "3.2.2.1", "3.2.2.2", "3.2.4.1", "3.3.1.1", "3.3.1.2", "3.3.1.4", "3.3.1.7", "3.3.1.10", "3.3.2.5"],
+"text": "blah blah"
 },
 {
 "question": "00057",
@@ -624,7 +548,8 @@
 "unit": ["3"],
 "topic": ["3.1"],
 "subtopic": ["3.1.1"],
-"descriptor": ["3.1.1.4"]
+"descriptor": ["3.1.1.4"],
+"text": "blah blah"
 },
 {
 "question": "00058",
@@ -635,7 +560,8 @@
 "unit": ["4"],
 "topic": ["4.5"],
 "subtopic": ["4.5.1"],
-"descriptor": ["4.5.1.1", "4.5.1.2"]
+"descriptor": ["4.5.1.1", "4.5.1.2"],
+"text": "blah blah"
 },
 {
 "question": "00059",
@@ -646,7 +572,8 @@
 "unit": ["3", "4"],
 "topic": ["3.3", "4.4"],
 "subtopic": ["3.3.1", "4.4.1"],
-"descriptor": ["3.3.1.6", "3.3.1.9", "4.4.1.2"]
+"descriptor": ["3.3.1.6", "3.3.1.9", "4.4.1.2"],
+"text": "blah blah"
 },
 {
 "question": "00060",
@@ -657,7 +584,8 @@
 "unit": ["3", "4"],
 "topic": ["3.3", "4.3", "4.4"],
 "subtopic": ["3.3.1", "3.3.2", "3.3.3", "4.3.2", "4.4.1"],
-"descriptor": ["3.3.1.2", "3.3.2.3", "3.3.3.1", "4.3.2.1", "4.3.2.2", "4.3.2.5", "4.4.1.2"]
+"descriptor": ["3.3.1.2", "3.3.2.3", "3.3.3.1", "4.3.2.1", "4.3.2.2", "4.3.2.5", "4.4.1.2"],
+"text": "blah blah"
 },
 {
 "question": "00061",
@@ -668,7 +596,8 @@
 "unit": ["3"],
 "topic": ["3.2", "3.3"],
 "subtopic": ["3.2.3", "3.2.4", "3.3.1", "3.3.2"],
-"descriptor": ["3.2.3.1", "3.2.4.1", "3.3.1.1", "3.3.1.2", "3.3.1.10", "3.3.2.5"]
+"descriptor": ["3.2.3.1", "3.2.4.1", "3.3.1.1", "3.3.1.2", "3.3.1.10", "3.3.2.5"],
+"text": "blah blah"
 },
 {
 "question": "00062",
@@ -679,7 +608,8 @@
 "unit": ["3"],
 "topic": ["3.2"],
 "subtopic": ["3.2.1", "3.2.4"],
-"descriptor": ["3.2.1.4", "3.2.4.1"]
+"descriptor": ["3.2.1.4", "3.2.4.1"],
+"text": "blah blah"
 },
 {
 "question": "00063",
@@ -690,7 +620,8 @@
 "unit": ["3"],
 "topic": ["3.1"],
 "subtopic": ["3.1.1"],
-"descriptor": ["3.1.1.1"]
+"descriptor": ["3.1.1.1"],
+"text": "blah blah"
 },
 {
 "question": "00064",
@@ -701,7 +632,8 @@
 "unit": ["3", "4"],
 "topic": ["3.2", "3.3", "4.1"],
 "subtopic": ["3.2.1", "3.2.3", "3.2.4", "3.3.1", "4.1.1"],
-"descriptor": ["3.2.1.3", "3.2.3.1", "3.2.4.1", "3.3.1.1", "3.3.1.2", "4.1.1.4"]
+"descriptor": ["3.2.1.3", "3.2.3.1", "3.2.4.1", "3.3.1.1", "3.3.1.2", "4.1.1.4"],
+"text": "blah blah"
 },
 {
 "question": "00065",
@@ -712,7 +644,8 @@
 "unit": ["3"],
 "topic": ["3.3"],
 "subtopic": ["3.3.1", "3.3.3"],
-"descriptor": ["3.3.1.1", "3.3.1.2", "3.3.3.2"]
+"descriptor": ["3.3.1.1", "3.3.1.2", "3.3.3.2"],
+"text": "blah blah"
 },
 {
 "question": "00066",
@@ -723,7 +656,8 @@
 "unit": ["3", "4"],
 "topic": ["3.3", "4.4"],
 "subtopic": ["3.3.2", "3.3.3", "4.4.1"],
-"descriptor": ["3.3.2.5", "3.3.3.3", "4.4.1.2", "4.4.1.3"]
+"descriptor": ["3.3.2.5", "3.3.3.3", "4.4.1.2", "4.4.1.3"],
+"text": "blah blah"
 },
 {
 "question": "00067",
@@ -734,6 +668,235 @@
 "unit": ["4"],
 "topic": ["4.4"],
 "subtopic": ["4.4.1", "4.4.2"],
-"descriptor": ["4.4.1.3", "4.4.2.2", "4.4.2.3"]
+"descriptor": ["4.4.1.3", "4.4.2.2", "4.4.2.3"],
+"text": "blah blah"
+},
+{
+"question": "10000",
+"marks": "1",
+"difficulty": ["SF"],
+"tech": ["TF"],
+"format": ["MCQ"],
+"unit": ["3"],
+"topic": ["3.1", "3.2"],
+"subtopic": ["3.1.1", "3.2.2"],
+"descriptor": ["3.1.1.1", "3.2.2.1"],
+"text": "blah blah"
+},
+{
+"question": "10001",
+"marks": "1",
+"difficulty": ["SF"],
+"tech": ["TF"],
+"format": ["MCQ"],
+"unit": ["3"],
+"topic": ["3.2"],
+"subtopic": ["3.2.1"],
+"descriptor": ["3.2.1.4"],
+"text": "blah blah"
+},
+{
+"question": "10002",
+"marks": "1",
+"difficulty": ["SF"],
+"tech": ["TF"],
+"format": ["MCQ"],
+"unit": ["4"],
+"topic": ["4.3"],
+"subtopic": ["4.3.2"],
+"descriptor": ["4.3.2.2", "4.3.2.5"],
+"text": "blah blah"
+},
+{
+"question": "10003",
+"marks": "1",
+"difficulty": ["SF"],
+"tech": ["TF"],
+"format": ["MCQ"],
+"unit": ["3"],
+"topic": ["3.3"],
+"subtopic": ["3.3.1"],
+"descriptor": ["3.3.1.1", "3.3.1.3"],
+"text": "blah blah"
+},
+{
+"question": "10004",
+"marks": "1",
+"difficulty": ["SF"],
+"tech": ["TF"],
+"format": ["MCQ"],
+"unit": ["3"],
+"topic": ["3.3"],
+"subtopic": ["3.3.1", "3.3.2"],
+"descriptor": ["3.3.1.5", "3.3.2.5"],
+"text": "blah blah"
+},
+{
+"question": "10005",
+"marks": "1",
+"difficulty": ["SF"],
+"tech": ["TF"],
+"format": ["MCQ"],
+"unit": ["3"],
+"topic": ["3.2"],
+"subtopic": ["3.2.1"],
+"descriptor": ["3.2.1.1"],
+"text": "blah blah"
+},
+{
+"question": "10006",
+"marks": "1",
+"difficulty": ["SF"],
+"tech": ["TF"],
+"format": ["MCQ"],
+"unit": ["3", "4"],
+"topic": ["3.3", "4.1"],
+"subtopic": ["3.3.1", "3.3.2", "4.1.1"],
+"descriptor": ["3.3.1.3", "3.3.2.5", "4.1.1.3"],
+"text": "blah blah"
+},
+{
+"question": "10007",
+"marks": "1",
+"difficulty": ["SF"],
+"tech": ["TF"],
+"format": ["MCQ"],
+"unit": ["4"],
+"topic": ["4.5"],
+"subtopic": ["4.5.3"],
+"descriptor": ["4.5.3.3"],
+"text": "blah blah"
+},
+{
+"question": "10008",
+"marks": "1",
+"difficulty": ["SF"],
+"tech": ["TF"],
+"format": ["MCQ"],
+"unit": ["3"],
+"topic": ["3.3"],
+"subtopic": ["3.3.1", "3.3.2"],
+"descriptor": ["3.3.1.6", "3.3.2.5"],
+"text": "blah blah"
+},
+{
+"question": "10009",
+"marks": "1",
+"difficulty": ["SF"],
+"tech": ["TF"],
+"format": ["MCQ"],
+"unit": ["3", "4"],
+"topic": ["3.3", "4.4"],
+"subtopic": ["3.3.1", "3.3.2", "4.4.1"],
+"descriptor": ["3.3.1.3", "3.3.1.7", "3.3.2.5", "4.4.1.2"],
+"text": "blah blah"
+},
+{
+"question": "10010",
+"marks": "4",
+"difficulty": ["SF"],
+"tech": ["TF"],
+"format": ["SR"],
+"unit": ["4"],
+"topic": ["4.3"],
+"subtopic": ["4.3.1"],
+"descriptor": ["4.3.1.1", "4.3.1.2", "4.3.1.3", "4.3.1.4"],
+"text": "blah blah"
+},
+{
+"question": "10011",
+"marks": "4",
+"difficulty": ["SF"],
+"tech": ["TF"],
+"format": ["SR"],
+"unit": ["3"],
+"topic": ["3.3"],
+"subtopic": ["3.3.2", "3.3.1"],
+"descriptor": ["3.3.2.1", "3.3.2.3", "3.3.2.5", "3.3.1.3"],
+"text": "blah blah"
+},
+{
+"question": "10012",
+"marks": "5",
+"difficulty": ["SF"],
+"tech": ["TF"],
+"format": ["SR"],
+"unit": ["4"],
+"topic": ["4.3"],
+"subtopic": ["4.3.2"],
+"descriptor": ["4.3.2.2", "4.3.2.3", "4.3.2.5"],
+"text": "blah blah"
+},
+{
+"question": "10013",
+"marks": "6",
+"difficulty": ["SF"],
+"tech": ["TF"],
+"format": ["SR"],
+"unit": ["3"],
+"topic": ["3.3", "3.2"],
+"subtopic": ["3.3.1", "3.2.2"],
+"descriptor": ["3.3.1.1", "3.3.1.4", "3.3.1.8", "3.3.1.9", "3.2.2.1"],
+"text": "blah blah"
+},
+{
+"question": "10014",
+"marks": "4",
+"difficulty": ["CF"],
+"tech": ["TF"],
+"format": ["SR"],
+"unit": ["4"],
+"topic": ["4.3"],
+"subtopic": ["4.3.2"],
+"descriptor": ["4.3.2.1", "4.3.2.4"],
+"text": "blah blah"
+},
+{
+"question": "10015",
+"marks": "5",
+"difficulty": ["CF"],
+"tech": ["TF"],
+"format": ["SR"],
+"unit": ["3"],
+"topic": ["3.3"],
+"subtopic": ["3.3.1"],
+"descriptor": ["3.3.1.3"],
+"text": "blah blah"
+},
+{
+"question": "10016",
+"marks": "6",
+"difficulty": ["CU"],
+"tech": ["TF"],
+"format": ["SR"],
+"unit": ["4"],
+"topic": ["4.1"],
+"subtopic": ["4.1.1"],
+"descriptor": ["4.1.1.1", "4.1.1.4"],
+"text": "blah blah"
+},
+{
+"question": "10017",
+"marks": "4",
+"difficulty": ["CU"],
+"tech": ["TF"],
+"format": ["SR"],
+"unit": ["4"],
+"topic": ["4.1", "4.2"],
+"subtopic": ["4.1.1", "4.2.1"],
+"descriptor": ["4.1.1.2", "4.2.1.2"],
+"text": "blah blah"
+},
+{
+"question": "10018",
+"marks": "7",
+"difficulty": ["CU"],
+"tech": ["TF"],
+"format": ["SR"],
+"unit": ["3"],
+"topic": ["3.1"],
+"subtopic": ["3.1.1"],
+"descriptor": ["3.1.1.6"],
+"text": "blah blah"
 }
 ]
