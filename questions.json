@@ -1,902 +1,1660 @@
 [
-{
-"question": "00001",
-"marks": "1",
-"difficulty": ["SF"],
-"tech": ["TF"],
-"format": ["MCQ"],
-"unit": ["4"],
-"topic": ["4.5"],
-"subtopic": ["4.5.1"],
-"descriptor": ["4.5.1.1"],
-"text": "Blah blah"
-},
-{
-"question": "00002",
-"marks": "5",
-"difficulty": ["SF"],
-"tech": ["TF"],
-"format": ["SR"],
-"unit": ["3"],
-"topic": ["3.3"],
-"subtopic": ["3.3.1", "3.3.2", "3.3.3"],
-"descriptor": ["3.3.1.2", "3.3.1.3", "3.3.1.4", "3.3.1.7", "3.3.1.11", "3.3.2.5", "3.3.3.2", "3.3.3.4"],
-"text": "The vertical acceleration of The Giant Drop at Dreamworld is given by the function a(t). Given the ride starts from rest, determine the ride's displacement in its third second of motion"
-},
-{
-"question": "00003",
-"marks": "1",
-"difficulty": ["SF"],
-"tech": ["TA"],
-"format": ["MCQ"],
-"unit": ["3"],
-"topic": ["3.3"],
-"subtopic": ["3.3.3"],
-"descriptor": ["3.3.3.3"],
-"text": "blah blah"
-},
-{
-"question": "00004",
-"marks": "1",
-"difficulty": ["SF"],
-"tech": ["TA"],
-"format": ["MCQ"],
-"unit": ["4"],
-"topic": ["4.4"],
-"subtopic": ["4.4.1"],
-"descriptor": ["4.4.1.1"],
-"text": "blah blah"
-},
-{
-"question": "00005",
-"marks": "6",
-"difficulty": ["SF", "CF"],
-"tech": ["TF", "TA"],
-"format": ["SR"],
-"unit": ["3"],
-"topic": ["3.1", "3.2"],
-"subtopic": ["3.1.1", "3.2.2"],
-"descriptor": ["3.1.1.1", "3.1.1.5", "3.2.2.1", "3.2.2.2", "3.2.2.3", "3.2.2.4"],
-"text": "blah blah"
-},
-{
-"question": "00007",
-"marks": "3",
-"difficulty": ["SF"],
-"tech": ["TA"],
-"format": ["SR"],
-"unit": ["4"],
-"topic": ["4.2"],
-"subtopic": ["4.2.1"],
-"descriptor": ["4.2.1.3"],
-"text": "blah blah"
-},
-{
-"question": "00008",
-"marks": "4",
-"difficulty": ["CU"],
-"tech": ["TA"],
-"format": ["SR"],
-"unit": ["4"],
-"topic": ["4.3", "4.4"],
-"subtopic": ["4.3.2", "4.4.2"],
-"descriptor": ["4.3.2.5", "4.4.2.3"],
-"text": "blah blah"
-},
-{
-"question": "00009",
-"marks": "3",
-"difficulty": ["SF"],
-"tech": ["TF"],
-"format": ["SR"],
-"unit": ["4"],
-"topic": ["4.3"],
-"subtopic": ["4.3.1"],
-"descriptor": ["4.3.1.1", "4.3.1.2", "4.3.1.3"],
-"text": "blah blah"
-},
-{
-"question": "00010",
-"marks": "6",
-"difficulty": ["SF"],
-"tech": ["TF"],
-"format": ["SR"],
-"unit": ["3", "4"],
-"topic": ["3.2", "4.1"],
-"subtopic": ["3.2.2", "3.2.4", "4.1.1"],
-"descriptor": ["3.2.2.1", "3.2.2.2", "3.2.2.3", "3.2.4.1", "4.1.1.4"],
-"text": "blah blah"
-},
-{
-"question": "00011",
-"marks": "1",
-"difficulty": ["SF"],
-"tech": ["TF"],
-"format": ["MCQ"],
-"unit": ["3", "4"],
-"topic": ["3.2", "4.1"],
-"subtopic": ["3.2.3", "3.2.4", "4.1.1"],
-"descriptor": ["3.2.3.1", "3.2.4.1", "4.1.1.1"],
-"text": "blah blah"
-},
-{
-"question": "00012",
-"marks": "2",
-"difficulty": ["SF"],
-"tech": ["TF"],
-"format": ["SR"],
-"unit": ["3"],
-"topic": ["3.3"],
-"subtopic": ["3.3.1", "3.3.2"],
-"descriptor": ["3.3.1.11", "3.3.2.2"],
-"text": "blah blah"
-},
-{
-"question": "00013",
-"marks": "5",
-"difficulty": ["SF"],
-"tech": ["TA"],
-"format": ["SR"],
-"unit": ["4"],
-"topic": ["4.5", "4.4"],
-"subtopic": ["4.5.3", "4.4.2", "4.5.2"],
-"descriptor": ["4.5.3.1", "4.5.3.2", "4.4.2.3", "4.5.2.2", "4.5.3.1", "4.5.3.4"],
-"text": "blah blah"
-},
-{
-"question": "00016",
-"marks": "4",
-"difficulty": ["SF"],
-"tech": ["TA"],
-"format": ["SR"],
-"unit": ["4"],
-"topic": ["4.4"],
-"subtopic": ["4.4.1", "4.4.2"],
-"descriptor": ["4.4.1.4", "4.4.2.1"],
-"text": "blah blah"
-},
-{
-"question": "00017",
-"marks": "5",
-"difficulty": ["CF"],
-"tech": ["TF"],
-"format": ["SR"],
-"unit": ["3"],
-"topic": ["3.1"],
-"subtopic": ["3.1.1"],
-"descriptor": ["3.1.1.3"],
-"text": "blah blah"
-},
-{
-"question": "00018",
-"marks": "4",
-"difficulty": ["CU"],
-"tech": ["TF"],
-"format": ["SR"],
-"unit": ["3", "4"],
-"topic": ["3.2", "4.2"],
-"subtopic": ["3.2.3", "3.2.4", "4.2.1"],
-"descriptor": ["3.2.3.2", "3.2.3.3", "3.2.4.1", "4.2.1.2"],
-"text": "blah blah"
-},
-{
-"question": "00019",
-"marks": "1",
-"difficulty": ["SF"],
-"tech": ["TF"],
-"format": ["MCQ"],
-"unit": ["3"],
-"topic": ["3.2"],
-"subtopic": ["3.2.1"],
-"descriptor": ["3.2.1.2"],
-"text": "blah blah"
-},
-{
-"question": "00020",
-"marks": "8",
-"difficulty": ["SF"],
-"tech": ["TF"],
-"format": ["SR"],
-"unit": ["4"],
-"topic": ["4.3"],
-"subtopic": ["4.3.2"],
-"descriptor": ["4.3.2.1", "4.3.2.2", "4.3.2.3", "4.3.2.5"],
-"text": "blah blah"
-},
-{
-"question": "00022",
-"marks": "2",
-"difficulty": ["SF"],
-"tech": ["TF"],
-"format": ["SR"],
-"unit": ["3"],
-"topic": ["3.3"],
-"subtopic": ["3.3.1"],
-"descriptor": ["3.3.1.2", "3.3.1.3", "3.3.1.8", "3.3.1.9"],
-"text": "blah blah"
-},
-{
-"question": "00023",
-"marks": "8",
-"difficulty": ["CF"],
-"tech": ["TF"],
-"format": ["SR"],
-"unit": ["3"],
-"topic": ["3.2"],
-"subtopic": ["3.2.3", "3.2.4"],
-"descriptor": ["3.2.3.1", "3.2.4.1"],
-"text": "blah blah"
-},
-{
-"question": "00024",
-"marks": "1",
-"difficulty": ["SF"],
-"tech": ["TF"],
-"format": ["MCQ"],
-"unit": ["3"],
-"topic": ["3.2"],
-"subtopic": ["3.2.1", "3.2.2"],
-"descriptor": ["3.2.1.3", "3.2.1.4", "3.2.2.2"],
-"text": "blah blah"
-},
-{
-"question": "00025",
-"marks": "5",
-"difficulty": ["SF"],
-"tech": ["TF"],
-"format": ["SR"],
-"unit": ["3"],
-"topic": ["3.3"],
-"subtopic": ["3.3.1", "3.3.2", "3.3.3"],
-"descriptor": ["3.3.1.3", "3.3.1.7", "3.3.2.5", "3.3.3.3"],
-"text": "blah blah"
-},
-{
-"question": "00026",
-"marks": "11",
-"difficulty": ["SF"],
-"tech": ["TF", "TA"],
-"format": ["SR"],
-"unit": ["3", "4"],
-"topic": ["3.3", "4.4"],
-"subtopic": ["3.3.1", "3.3.2", "4.4.1"],
-"descriptor": ["3.3.1.3", "3.3.2.5", "4.4.1.2", "4.4.1.3"],
-"text": "blah blah"
-},
-{
-"question": "00030",
-"marks": "4",
-"difficulty": ["SF"],
-"tech": ["TF"],
-"format": ["SR"],
-"unit": ["4"],
-"topic": ["4.2"],
-"subtopic": ["4.2.1"],
-"descriptor": ["4.2.1.3"],
-"text": "blah blah"
-},
-{
-"question": "00032",
-"marks": "7",
-"difficulty": ["SF"],
-"tech": ["TF"],
-"format": ["SR"],
-"unit": ["3"],
-"topic": ["3.3"],
-"subtopic": ["3.3.1", "3.3.2"],
-"descriptor": ["3.3.1.6", "3.3.1.7", "3.3.1.8", "3.3.2.4", "3.3.2.1"],
-"text": "blah blah"
-},
-{
-"question": "00033",
-"marks": "1",
-"difficulty": ["SF"],
-"tech": ["TA"],
-"format": ["MCQ"],
-"unit": ["3"],
-"topic": ["3.2"],
-"subtopic": ["3.2.1"],
-"descriptor": ["3.2.1.1"],
-"text": "blah blah"
-},
-{
-"question": "00034",
-"marks": "1",
-"difficulty": ["SF"],
-"tech": ["TA"],
-"format": ["MCQ"],
-"unit": ["4"],
-"topic": ["4.5"],
-"subtopic": ["4.5.2"],
-"descriptor": ["4.5.2.1"],
-"text": "blah blah"
-},
-{
-"question": "00035",
-"marks": "3",
-"difficulty": ["SF"],
-"tech": ["TF"],
-"format": ["SR"],
-"unit": ["4"],
-"topic": ["4.3"],
-"subtopic": ["4.3.1"],
-"descriptor": ["4.3.1.1", "4.3.1.2", "4.3.1.3", "4.3.1.4"],
-"text": "blah blah"
-},
-{
-"question": "00037",
-"marks": "1",
-"difficulty": ["SF"],
-"tech": ["TA"],
-"format": ["MCQ"],
-"unit": ["4"],
-"topic": ["4.4"],
-"subtopic": ["4.4.1"],
-"descriptor": ["4.4.1.2"],
-"text": "blah blah"
-},
-{
-"question": "00038",
-"marks": "5",
-"difficulty": ["CU"],
-"tech": ["TA"],
-"format": ["SR"],
-"unit": ["4"],
-"topic": ["4.4"],
-"subtopic": ["4.4.1", "4.4.2"],
-"descriptor": ["4.4.1.4", "4.4.2.1", "4.4.2.2", "4.4.2.3"],
-"text": "blah blah"
-},
-{
-"question": "00039",
-"marks": "1",
-"difficulty": ["SF"],
-"tech": ["TA"],
-"format": ["MCQ"],
-"unit": ["3", "4"],
-"topic": ["3.2", "4.1"],
-"subtopic": ["3.2.1", "3.2.4", "4.1.1"],
-"descriptor": ["3.2.1.4", "3.2.4.1", "4.1.1.2"],
-"text": "blah blah"
-},
-{
-"question": "00040",
-"marks": "9",
-"difficulty": ["CU"],
-"tech": ["TF"],
-"format": ["SR"],
-"unit": ["3", "4"],
-"topic": ["3.2", "4.1", "4.2"],
-"subtopic": ["3.2.3", "3.2.4", "4.1.1", "4.2.1"],
-"descriptor": ["3.2.3.1", "3.2.4.1", "4.1.1.4", "4.1.1.6", "4.2.1.1"],
-"text": "blah blah"
-},
-{
-"question": "00041",
-"marks": "1",
-"difficulty": ["SF"],
-"tech": ["TF"],
-"format": ["MCQ"],
-"unit": ["3"],
-"topic": ["3.1"],
-"subtopic": ["3.1.1"],
-"descriptor": ["3.1.1.4"],
-"text": "blah blah"
-},
-{
-"question": "00042",
-"marks": "1",
-"difficulty": ["SF"],
-"tech": ["TF"],
-"format": ["MCQ"],
-"unit": ["3"],
-"topic": ["3.1", "3.3"],
-"subtopic": ["3.1.1", "3.3.1"],
-"descriptor": ["3.1.1.1", "3.3.1.2", "3.3.1.5"],
-"text": "blah blah"
-},
-{
-"question": "00043",
-"marks": "2",
-"difficulty": ["SF"],
-"tech": ["TA"],
-"format": ["SR"],
-"unit": ["4"],
-"topic": ["4.3"],
-"subtopic": ["4.3.2"],
-"descriptor": ["4.3.2.2", "4.3.2.3", "4.3.2.4", "4.3.2.5"],
-"text": "blah blah"
-},
-{
-"question": "00046",
-"marks": "1",
-"difficulty": ["SF"],
-"tech": ["TF"],
-"format": ["MCQ"],
-"unit": ["4"],
-"topic": ["4.5"],
-"subtopic": ["4.5.3"],
-"descriptor": ["4.5.3.1", "4.5.3.4"],
-"text": "blah blah"
-},
-{
-"question": "00047",
-"marks": "1",
-"difficulty": ["SF"],
-"tech": ["TA"],
-"format": ["MCQ"],
-"unit": ["4"],
-"topic": ["4.5"],
-"subtopic": ["4.5.3"],
-"descriptor": ["4.5.3.3"],
-"text": "blah blah"
-},
-{
-"question": "00048",
-"marks": "3",
-"difficulty": ["CF"],
-"tech": ["TF"],
-"format": ["SR"],
-"unit": ["3"],
-"topic": ["3.1", "3.2"],
-"subtopic": ["3.1.1", "3.2.2"],
-"descriptor": ["3.1.1.1", "3.2.2.1", "3.2.2.3"],
-"text": "blah blah"
-},
-{
-"question": "00049",
-"marks": "5",
-"difficulty": ["CF"],
-"tech": ["TA"],
-"format": ["SR"],
-"unit": ["4"],
-"topic": ["4.2"],
-"subtopic": ["4.2.1"],
-"descriptor": ["4.2.1.3", "4.2.1.4"],
-"text": "blah blah"
-},
-{
-"question": "00050",
-"marks": "1",
-"difficulty": ["SF"],
-"tech": ["TA"],
-"format": ["MCQ"],
-"unit": ["3"],
-"topic": ["3.1"],
-"subtopic": ["3.1.1"],
-"descriptor": ["3.1.1.2"],
-"text": "blah blah"
-},
-{
-"question": "00051",
-"marks": "1",
-"difficulty": ["SF"],
-"tech": ["TF"],
-"format": ["MCQ"],
-"unit": ["3"],
-"topic": ["3.3"],
-"subtopic": ["3.3.1", "3.3.2", "3.3.3"],
-"descriptor": ["3.3.1.3", "3.3.2.3", "3.3.2.5", "3.3.3.1"],
-"text": "blah blah"
-},
-{
-"question": "00052",
-"marks": "5",
-"difficulty": ["CU"],
-"tech": ["TA"],
-"format": ["SR"],
-"unit": ["3"],
-"topic": ["3.1"],
-"subtopic": ["3.1.1"],
-"descriptor": ["3.1.1.1", "3.1.1.6"],
-"text": "blah blah"
-},
-{
-"question": "00053",
-"marks": "2",
-"difficulty": ["SF"],
-"tech": ["TF"],
-"format": ["SR"],
-"unit": ["3"],
-"topic": ["3.2"],
-"subtopic": ["3.2.1", "3.2.4"],
-"descriptor": ["3.2.1.4", "3.2.4.1"],
-"text": "blah blah"
-},
-{
-"question": "00054",
-"marks": "1",
-"difficulty": ["SF"],
-"tech": ["TF"],
-"format": ["MCQ"],
-"unit": ["4"],
-"topic": ["4.1"],
-"subtopic": ["4.1.1"],
-"descriptor": ["4.1.1.3", "4.1.1.5"],
-"text": "blah blah"
-},
-{
-"question": "00055",
-"marks": "3",
-"difficulty": ["SF"],
-"tech": ["TA"],
-"format": ["SR"],
-"unit": ["4"],
-"topic": ["4.2"],
-"subtopic": ["4.2.1"],
-"descriptor": ["4.2.1.3"],
-"text": "blah blah"
-},
-{
-"question": "00056",
-"marks": "6",
-"difficulty": ["CF"],
-"tech": ["TF"],
-"format": ["SR"],
-"unit": ["3"],
-"topic": ["3.1", "3.2", "3.3"],
-"subtopic": ["3.1.1", "3.2.1", "3.2.2", "3.2.4", "3.3.1", "3.3.2"],
-"descriptor": ["3.1.1.1", "3.2.1.4", "3.2.2.1", "3.2.2.2", "3.2.4.1", "3.3.1.1", "3.3.1.2", "3.3.1.4", "3.3.1.7", "3.3.1.10", "3.3.2.5"],
-"text": "blah blah"
-},
-{
-"question": "00057",
-"marks": "1",
-"difficulty": ["SF"],
-"tech": ["TF"],
-"format": ["MCQ"],
-"unit": ["3"],
-"topic": ["3.1"],
-"subtopic": ["3.1.1"],
-"descriptor": ["3.1.1.4"],
-"text": "blah blah"
-},
-{
-"question": "00058",
-"marks": "2",
-"difficulty": ["SF"],
-"tech": ["TF"],
-"format": ["SR"],
-"unit": ["4"],
-"topic": ["4.5"],
-"subtopic": ["4.5.1"],
-"descriptor": ["4.5.1.1", "4.5.1.2"],
-"text": "blah blah"
-},
-{
-"question": "00059",
-"marks": "3",
-"difficulty": ["SF"],
-"tech": ["TF"],
-"format": ["SR"],
-"unit": ["3", "4"],
-"topic": ["3.3", "4.4"],
-"subtopic": ["3.3.1", "4.4.1"],
-"descriptor": ["3.3.1.6", "3.3.1.9", "4.4.1.2"],
-"text": "blah blah"
-},
-{
-"question": "00060",
-"marks": "6",
-"difficulty": ["CU"],
-"tech": ["TA"],
-"format": ["SR"],
-"unit": ["3", "4"],
-"topic": ["3.3", "4.3", "4.4"],
-"subtopic": ["3.3.1", "3.3.2", "3.3.3", "4.3.2", "4.4.1"],
-"descriptor": ["3.3.1.2", "3.3.2.3", "3.3.3.1", "4.3.2.1", "4.3.2.2", "4.3.2.5", "4.4.1.2"],
-"text": "blah blah"
-},
-{
-"question": "00061",
-"marks": "4",
-"difficulty": ["CU"],
-"tech": ["TF"],
-"format": ["SR"],
-"unit": ["3"],
-"topic": ["3.2", "3.3"],
-"subtopic": ["3.2.3", "3.2.4", "3.3.1", "3.3.2"],
-"descriptor": ["3.2.3.1", "3.2.4.1", "3.3.1.1", "3.3.1.2", "3.3.1.10", "3.3.2.5"],
-"text": "blah blah"
-},
-{
-"question": "00062",
-"marks": "6",
-"difficulty": ["CU"],
-"tech": ["TF"],
-"format": ["SR"],
-"unit": ["3"],
-"topic": ["3.2"],
-"subtopic": ["3.2.1", "3.2.4"],
-"descriptor": ["3.2.1.4", "3.2.4.1"],
-"text": "blah blah"
-},
-{
-"question": "00063",
-"marks": "6",
-"difficulty": ["CU"],
-"tech": ["TF"],
-"format": ["SR"],
-"unit": ["3"],
-"topic": ["3.1"],
-"subtopic": ["3.1.1"],
-"descriptor": ["3.1.1.1"],
-"text": "blah blah"
-},
-{
-"question": "00064",
-"marks": "9",
-"difficulty": ["CU"],
-"tech": ["TF"],
-"format": ["SR"],
-"unit": ["3", "4"],
-"topic": ["3.2", "3.3", "4.1"],
-"subtopic": ["3.2.1", "3.2.3", "3.2.4", "3.3.1", "4.1.1"],
-"descriptor": ["3.2.1.3", "3.2.3.1", "3.2.4.1", "3.3.1.1", "3.3.1.2", "4.1.1.4"],
-"text": "blah blah"
-},
-{
-"question": "00065",
-"marks": "6",
-"difficulty": ["CU"],
-"tech": ["TA"],
-"format": ["SR"],
-"unit": ["3"],
-"topic": ["3.3"],
-"subtopic": ["3.3.1", "3.3.3"],
-"descriptor": ["3.3.1.1", "3.3.1.2", "3.3.3.2"],
-"text": "blah blah"
-},
-{
-"question": "00066",
-"marks": "4",
-"difficulty": ["CU"],
-"tech": ["TA"],
-"format": ["SR"],
-"unit": ["3", "4"],
-"topic": ["3.3", "4.4"],
-"subtopic": ["3.3.2", "3.3.3", "4.4.1"],
-"descriptor": ["3.3.2.5", "3.3.3.3", "4.4.1.2", "4.4.1.3"],
-"text": "blah blah"
-},
-{
-"question": "00067",
-"marks": "5",
-"difficulty": ["CU"],
-"tech": ["TA"],
-"format": ["SR"],
-"unit": ["4"],
-"topic": ["4.4"],
-"subtopic": ["4.4.1", "4.4.2"],
-"descriptor": ["4.4.1.3", "4.4.2.2", "4.4.2.3"],
-"text": "blah blah"
-},
-{
-"question": "10000",
-"marks": "1",
-"difficulty": ["SF"],
-"tech": ["TF"],
-"format": ["MCQ"],
-"unit": ["3"],
-"topic": ["3.1", "3.2"],
-"subtopic": ["3.1.1", "3.2.2"],
-"descriptor": ["3.1.1.1", "3.2.2.1"],
-"text": "blah blah"
-},
-{
-"question": "10001",
-"marks": "1",
-"difficulty": ["SF"],
-"tech": ["TF"],
-"format": ["MCQ"],
-"unit": ["3"],
-"topic": ["3.2"],
-"subtopic": ["3.2.1"],
-"descriptor": ["3.2.1.4"],
-"text": "blah blah"
-},
-{
-"question": "10002",
-"marks": "1",
-"difficulty": ["SF"],
-"tech": ["TF"],
-"format": ["MCQ"],
-"unit": ["4"],
-"topic": ["4.3"],
-"subtopic": ["4.3.2"],
-"descriptor": ["4.3.2.2", "4.3.2.5"],
-"text": "blah blah"
-},
-{
-"question": "10003",
-"marks": "1",
-"difficulty": ["SF"],
-"tech": ["TF"],
-"format": ["MCQ"],
-"unit": ["3"],
-"topic": ["3.3"],
-"subtopic": ["3.3.1"],
-"descriptor": ["3.3.1.1", "3.3.1.3"],
-"text": "blah blah"
-},
-{
-"question": "10004",
-"marks": "1",
-"difficulty": ["SF"],
-"tech": ["TF"],
-"format": ["MCQ"],
-"unit": ["3"],
-"topic": ["3.3"],
-"subtopic": ["3.3.1", "3.3.2"],
-"descriptor": ["3.3.1.5", "3.3.2.5"],
-"text": "blah blah"
-},
-{
-"question": "10005",
-"marks": "1",
-"difficulty": ["SF"],
-"tech": ["TF"],
-"format": ["MCQ"],
-"unit": ["3"],
-"topic": ["3.2"],
-"subtopic": ["3.2.1"],
-"descriptor": ["3.2.1.1"],
-"text": "blah blah"
-},
-{
-"question": "10006",
-"marks": "1",
-"difficulty": ["SF"],
-"tech": ["TF"],
-"format": ["MCQ"],
-"unit": ["3", "4"],
-"topic": ["3.3", "4.1"],
-"subtopic": ["3.3.1", "3.3.2", "4.1.1"],
-"descriptor": ["3.3.1.3", "3.3.2.5", "4.1.1.3"],
-"text": "blah blah"
-},
-{
-"question": "10007",
-"marks": "1",
-"difficulty": ["SF"],
-"tech": ["TF"],
-"format": ["MCQ"],
-"unit": ["4"],
-"topic": ["4.5"],
-"subtopic": ["4.5.3"],
-"descriptor": ["4.5.3.3"],
-"text": "blah blah"
-},
-{
-"question": "10008",
-"marks": "1",
-"difficulty": ["SF"],
-"tech": ["TF"],
-"format": ["MCQ"],
-"unit": ["3"],
-"topic": ["3.3"],
-"subtopic": ["3.3.1", "3.3.2"],
-"descriptor": ["3.3.1.6", "3.3.2.5"],
-"text": "blah blah"
-},
-{
-"question": "10009",
-"marks": "1",
-"difficulty": ["SF"],
-"tech": ["TF"],
-"format": ["MCQ"],
-"unit": ["3", "4"],
-"topic": ["3.3", "4.4"],
-"subtopic": ["3.3.1", "3.3.2", "4.4.1"],
-"descriptor": ["3.3.1.3", "3.3.1.7", "3.3.2.5", "4.4.1.2"],
-"text": "blah blah"
-},
-{
-"question": "10010",
-"marks": "4",
-"difficulty": ["SF"],
-"tech": ["TF"],
-"format": ["SR"],
-"unit": ["4"],
-"topic": ["4.3"],
-"subtopic": ["4.3.1"],
-"descriptor": ["4.3.1.1", "4.3.1.2", "4.3.1.3", "4.3.1.4"],
-"text": "blah blah"
-},
-{
-"question": "10011",
-"marks": "4",
-"difficulty": ["SF"],
-"tech": ["TF"],
-"format": ["SR"],
-"unit": ["3"],
-"topic": ["3.3"],
-"subtopic": ["3.3.2", "3.3.1"],
-"descriptor": ["3.3.2.1", "3.3.2.3", "3.3.2.5", "3.3.1.3"],
-"text": "blah blah"
-},
-{
-"question": "10012",
-"marks": "5",
-"difficulty": ["SF"],
-"tech": ["TF"],
-"format": ["SR"],
-"unit": ["4"],
-"topic": ["4.3"],
-"subtopic": ["4.3.2"],
-"descriptor": ["4.3.2.2", "4.3.2.3", "4.3.2.5"],
-"text": "blah blah"
-},
-{
-"question": "10013",
-"marks": "6",
-"difficulty": ["SF"],
-"tech": ["TF"],
-"format": ["SR"],
-"unit": ["3"],
-"topic": ["3.3", "3.2"],
-"subtopic": ["3.3.1", "3.2.2"],
-"descriptor": ["3.3.1.1", "3.3.1.4", "3.3.1.8", "3.3.1.9", "3.2.2.1"],
-"text": "blah blah"
-},
-{
-"question": "10014",
-"marks": "4",
-"difficulty": ["CF"],
-"tech": ["TF"],
-"format": ["SR"],
-"unit": ["4"],
-"topic": ["4.3"],
-"subtopic": ["4.3.2"],
-"descriptor": ["4.3.2.1", "4.3.2.4"],
-"text": "blah blah"
-},
-{
-"question": "10015",
-"marks": "5",
-"difficulty": ["CF"],
-"tech": ["TF"],
-"format": ["SR"],
-"unit": ["3"],
-"topic": ["3.3"],
-"subtopic": ["3.3.1"],
-"descriptor": ["3.3.1.3"],
-"text": "blah blah"
-},
-{
-"question": "10016",
-"marks": "6",
-"difficulty": ["CU"],
-"tech": ["TF"],
-"format": ["SR"],
-"unit": ["4"],
-"topic": ["4.1"],
-"subtopic": ["4.1.1"],
-"descriptor": ["4.1.1.1", "4.1.1.4"],
-"text": "blah blah"
-},
-{
-"question": "10017",
-"marks": "4",
-"difficulty": ["CU"],
-"tech": ["TF"],
-"format": ["SR"],
-"unit": ["4"],
-"topic": ["4.1", "4.2"],
-"subtopic": ["4.1.1", "4.2.1"],
-"descriptor": ["4.1.1.2", "4.2.1.2"],
-"text": "blah blah"
-},
-{
-"question": "10018",
-"marks": "7",
-"difficulty": ["CU"],
-"tech": ["TF"],
-"format": ["SR"],
-"unit": ["3"],
-"topic": ["3.1"],
-"subtopic": ["3.1.1"],
-"descriptor": ["3.1.1.6"],
-"text": "blah blah"
-}
+   {
+      "question":"00001",
+      "marks":"1",
+      "difficulty":[
+         "SF"
+      ],
+      "tech":[
+         "TF"
+      ],
+      "format":[
+         "MCQ"
+      ],
+      "unit":[
+         "4"
+      ],
+      "topic":[
+         "4.5"
+      ],
+      "subtopic":[
+         "4.5.1"
+      ],
+      "descriptor":[
+         "4.5.1.1"
+      ],
+      "text":"Blah blah"
+   },
+   {
+      "question":"00002",
+      "marks":"5",
+      "difficulty":[
+         "SF"
+      ],
+      "tech":[
+         "TF"
+      ],
+      "format":[
+         "SR"
+      ],
+      "unit":[
+         "3"
+      ],
+      "topic":[
+         "3.3"
+      ],
+      "subtopic":[
+         "3.3.1",
+         "3.3.2",
+         "3.3.3"
+      ],
+      "descriptor":[
+         "3.3.1.2",
+         "3.3.1.3",
+         "3.3.1.4",
+         "3.3.1.7",
+         "3.3.1.11",
+         "3.3.2.5",
+         "3.3.3.2",
+         "3.3.3.4"
+      ],
+      "text":"The vertical acceleration of 'The Giant Drop' at Dreamworld is given by the function a(t). Given the ride starts from rest, determine the ride's displacement in its third second of motion"
+   },
+   {
+      "question":"00003",
+      "marks":"1",
+      "difficulty":[
+         "SF"
+      ],
+      "tech":[
+         "TA"
+      ],
+      "format":[
+         "MCQ"
+      ],
+      "unit":[
+         "3"
+      ],
+      "topic":[
+         "3.3"
+      ],
+      "subtopic":[
+         "3.3.3"
+      ],
+      "descriptor":[
+         "3.3.3.3"
+      ],
+      "text":"blah blah"
+   },
+   {
+      "question":"00004",
+      "marks":"1",
+      "difficulty":[
+         "SF"
+      ],
+      "tech":[
+         "TA"
+      ],
+      "format":[
+         "MCQ"
+      ],
+      "unit":[
+         "4"
+      ],
+      "topic":[
+         "4.4"
+      ],
+      "subtopic":[
+         "4.4.1"
+      ],
+      "descriptor":[
+         "4.4.1.1"
+      ],
+      "text":"blah blah"
+   },
+   {
+      "question":"00005",
+      "marks":"6",
+      "difficulty":[
+         "SF",
+         "CF"
+      ],
+      "tech":[
+         "TF",
+         "TA"
+      ],
+      "format":[
+         "SR"
+      ],
+      "unit":[
+         "3"
+      ],
+      "topic":[
+         "3.1",
+         "3.2"
+      ],
+      "subtopic":[
+         "3.1.1",
+         "3.2.2"
+      ],
+      "descriptor":[
+         "3.1.1.1",
+         "3.1.1.5",
+         "3.2.2.1",
+         "3.2.2.2",
+         "3.2.2.3",
+         "3.2.2.4"
+      ],
+      "text":"blah blah"
+   },
+   {
+      "question":"00007",
+      "marks":"3",
+      "difficulty":[
+         "SF"
+      ],
+      "tech":[
+         "TA"
+      ],
+      "format":[
+         "SR"
+      ],
+      "unit":[
+         "4"
+      ],
+      "topic":[
+         "4.2"
+      ],
+      "subtopic":[
+         "4.2.1"
+      ],
+      "descriptor":[
+         "4.2.1.3"
+      ],
+      "text":"blah blah"
+   },
+   {
+      "question":"00008",
+      "marks":"4",
+      "difficulty":[
+         "CU"
+      ],
+      "tech":[
+         "TA"
+      ],
+      "format":[
+         "SR"
+      ],
+      "unit":[
+         "4"
+      ],
+      "topic":[
+         "4.3",
+         "4.4"
+      ],
+      "subtopic":[
+         "4.3.2",
+         "4.4.2"
+      ],
+      "descriptor":[
+         "4.3.2.5",
+         "4.4.2.3"
+      ],
+      "text":"blah blah"
+   },
+   {
+      "question":"00009",
+      "marks":"3",
+      "difficulty":[
+         "SF"
+      ],
+      "tech":[
+         "TF"
+      ],
+      "format":[
+         "SR"
+      ],
+      "unit":[
+         "4"
+      ],
+      "topic":[
+         "4.3"
+      ],
+      "subtopic":[
+         "4.3.1"
+      ],
+      "descriptor":[
+         "4.3.1.1",
+         "4.3.1.2",
+         "4.3.1.3"
+      ],
+      "text":"blah blah"
+   },
+   {
+      "question":"00010",
+      "marks":"6",
+      "difficulty":[
+         "SF"
+      ],
+      "tech":[
+         "TF"
+      ],
+      "format":[
+         "SR"
+      ],
+      "unit":[
+         "3",
+         "4"
+      ],
+      "topic":[
+         "3.2",
+         "4.1"
+      ],
+      "subtopic":[
+         "3.2.2",
+         "3.2.4",
+         "4.1.1"
+      ],
+      "descriptor":[
+         "3.2.2.1",
+         "3.2.2.2",
+         "3.2.2.3",
+         "3.2.4.1",
+         "4.1.1.4"
+      ],
+      "text":"blah blah"
+   },
+   {
+      "question":"00011",
+      "marks":"1",
+      "difficulty":[
+         "SF"
+      ],
+      "tech":[
+         "TF"
+      ],
+      "format":[
+         "MCQ"
+      ],
+      "unit":[
+         "3",
+         "4"
+      ],
+      "topic":[
+         "3.2",
+         "4.1"
+      ],
+      "subtopic":[
+         "3.2.3",
+         "3.2.4",
+         "4.1.1"
+      ],
+      "descriptor":[
+         "3.2.3.1",
+         "3.2.4.1",
+         "4.1.1.1"
+      ],
+      "text":"blah blah"
+   },
+   {
+      "question":"00012",
+      "marks":"2",
+      "difficulty":[
+         "SF"
+      ],
+      "tech":[
+         "TF"
+      ],
+      "format":[
+         "SR"
+      ],
+      "unit":[
+         "3"
+      ],
+      "topic":[
+         "3.3"
+      ],
+      "subtopic":[
+         "3.3.1",
+         "3.3.2"
+      ],
+      "descriptor":[
+         "3.3.1.11",
+         "3.3.2.2"
+      ],
+      "text":"blah blah"
+   },
+   {
+      "question":"00013",
+      "marks":"5",
+      "difficulty":[
+         "SF"
+      ],
+      "tech":[
+         "TA"
+      ],
+      "format":[
+         "SR"
+      ],
+      "unit":[
+         "4"
+      ],
+      "topic":[
+         "4.5",
+         "4.4"
+      ],
+      "subtopic":[
+         "4.5.3",
+         "4.4.2",
+         "4.5.2"
+      ],
+      "descriptor":[
+         "4.5.3.1",
+         "4.5.3.2",
+         "4.4.2.3",
+         "4.5.2.2",
+         "4.5.3.1",
+         "4.5.3.4"
+      ],
+      "text":"blah blah"
+   },
+   {
+      "question":"00016",
+      "marks":"4",
+      "difficulty":[
+         "SF"
+      ],
+      "tech":[
+         "TA"
+      ],
+      "format":[
+         "SR"
+      ],
+      "unit":[
+         "4"
+      ],
+      "topic":[
+         "4.4"
+      ],
+      "subtopic":[
+         "4.4.1",
+         "4.4.2"
+      ],
+      "descriptor":[
+         "4.4.1.4",
+         "4.4.2.1"
+      ],
+      "text":"blah blah"
+   },
+   {
+      "question":"00017",
+      "marks":"5",
+      "difficulty":[
+         "CF"
+      ],
+      "tech":[
+         "TF"
+      ],
+      "format":[
+         "SR"
+      ],
+      "unit":[
+         "3"
+      ],
+      "topic":[
+         "3.1"
+      ],
+      "subtopic":[
+         "3.1.1"
+      ],
+      "descriptor":[
+         "3.1.1.3"
+      ],
+      "text":"blah blah"
+   },
+   {
+      "question":"00018",
+      "marks":"4",
+      "difficulty":[
+         "CU"
+      ],
+      "tech":[
+         "TF"
+      ],
+      "format":[
+         "SR"
+      ],
+      "unit":[
+         "3",
+         "4"
+      ],
+      "topic":[
+         "3.2",
+         "4.2"
+      ],
+      "subtopic":[
+         "3.2.3",
+         "3.2.4",
+         "4.2.1"
+      ],
+      "descriptor":[
+         "3.2.3.2",
+         "3.2.3.3",
+         "3.2.4.1",
+         "4.2.1.2"
+      ],
+      "text":"blah blah"
+   },
+   {
+      "question":"00019",
+      "marks":"1",
+      "difficulty":[
+         "SF"
+      ],
+      "tech":[
+         "TF"
+      ],
+      "format":[
+         "MCQ"
+      ],
+      "unit":[
+         "3"
+      ],
+      "topic":[
+         "3.2"
+      ],
+      "subtopic":[
+         "3.2.1"
+      ],
+      "descriptor":[
+         "3.2.1.2"
+      ],
+      "text":"blah blah"
+   },
+   {
+      "question":"00020",
+      "marks":"8",
+      "difficulty":[
+         "SF"
+      ],
+      "tech":[
+         "TF"
+      ],
+      "format":[
+         "SR"
+      ],
+      "unit":[
+         "4"
+      ],
+      "topic":[
+         "4.3"
+      ],
+      "subtopic":[
+         "4.3.2"
+      ],
+      "descriptor":[
+         "4.3.2.1",
+         "4.3.2.2",
+         "4.3.2.3",
+         "4.3.2.5"
+      ],
+      "text":"blah blah"
+   },
+   {
+      "question":"00022",
+      "marks":"2",
+      "difficulty":[
+         "SF"
+      ],
+      "tech":[
+         "TF"
+      ],
+      "format":[
+         "SR"
+      ],
+      "unit":[
+         "3"
+      ],
+      "topic":[
+         "3.3"
+      ],
+      "subtopic":[
+         "3.3.1"
+      ],
+      "descriptor":[
+         "3.3.1.2",
+         "3.3.1.3",
+         "3.3.1.8",
+         "3.3.1.9"
+      ],
+      "text":"blah blah"
+   },
+   {
+      "question":"00023",
+      "marks":"8",
+      "difficulty":[
+         "CF"
+      ],
+      "tech":[
+         "TF"
+      ],
+      "format":[
+         "SR"
+      ],
+      "unit":[
+         "3"
+      ],
+      "topic":[
+         "3.2"
+      ],
+      "subtopic":[
+         "3.2.3",
+         "3.2.4"
+      ],
+      "descriptor":[
+         "3.2.3.1",
+         "3.2.4.1"
+      ],
+      "text":"blah blah"
+   },
+   {
+      "question":"00024",
+      "marks":"1",
+      "difficulty":[
+         "SF"
+      ],
+      "tech":[
+         "TF"
+      ],
+      "format":[
+         "MCQ"
+      ],
+      "unit":[
+         "3"
+      ],
+      "topic":[
+         "3.2"
+      ],
+      "subtopic":[
+         "3.2.1",
+         "3.2.2"
+      ],
+      "descriptor":[
+         "3.2.1.3",
+         "3.2.1.4",
+         "3.2.2.2"
+      ],
+      "text":"blah blah"
+   },
+   {
+      "question":"00025",
+      "marks":"5",
+      "difficulty":[
+         "SF"
+      ],
+      "tech":[
+         "TF"
+      ],
+      "format":[
+         "SR"
+      ],
+      "unit":[
+         "3"
+      ],
+      "topic":[
+         "3.3"
+      ],
+      "subtopic":[
+         "3.3.1",
+         "3.3.2",
+         "3.3.3"
+      ],
+      "descriptor":[
+         "3.3.1.3",
+         "3.3.1.7",
+         "3.3.2.5",
+         "3.3.3.3"
+      ],
+      "text":"blah blah"
+   },
+   {
+      "question":"00026",
+      "marks":"11",
+      "difficulty":[
+         "SF"
+      ],
+      "tech":[
+         "TF",
+         "TA"
+      ],
+      "format":[
+         "SR"
+      ],
+      "unit":[
+         "3",
+         "4"
+      ],
+      "topic":[
+         "3.3",
+         "4.4"
+      ],
+      "subtopic":[
+         "3.3.1",
+         "3.3.2",
+         "4.4.1"
+      ],
+      "descriptor":[
+         "3.3.1.3",
+         "3.3.2.5",
+         "4.4.1.2",
+         "4.4.1.3"
+      ],
+      "text":"blah blah"
+   },
+   {
+      "question":"00030",
+      "marks":"4",
+      "difficulty":[
+         "SF"
+      ],
+      "tech":[
+         "TF"
+      ],
+      "format":[
+         "SR"
+      ],
+      "unit":[
+         "4"
+      ],
+      "topic":[
+         "4.2"
+      ],
+      "subtopic":[
+         "4.2.1"
+      ],
+      "descriptor":[
+         "4.2.1.3"
+      ],
+      "text":"blah blah"
+   },
+   {
+      "question":"00031",
+      "marks":"7",
+      "difficulty":[
+         "SF"
+      ],
+      "tech":[
+         "TF"
+      ],
+      "format":[
+         "SR"
+      ],
+      "unit":[
+         "3"
+      ],
+      "topic":[
+         "3.3"
+      ],
+      "subtopic":[
+         "3.3.1",
+         "3.3.2"
+      ],
+      "descriptor":[
+         "3.3.1.6",
+         "3.3.1.7",
+         "3.3.1.8",
+         "3.3.2.4",
+         "3.3.2.1"
+      ],
+      "text":"blah blah"
+   },
+   {
+      "question":"00033",
+      "marks":"1",
+      "difficulty":[
+         "SF"
+      ],
+      "tech":[
+         "TA"
+      ],
+      "format":[
+         "MCQ"
+      ],
+      "unit":[
+         "3"
+      ],
+      "topic":[
+         "3.2"
+      ],
+      "subtopic":[
+         "3.2.1"
+      ],
+      "descriptor":[
+         "3.2.1.1"
+      ],
+      "text":"blah blah"
+   },
+   {
+      "question":"00034",
+      "marks":"1",
+      "difficulty":[
+         "SF"
+      ],
+      "tech":[
+         "TA"
+      ],
+      "format":[
+         "MCQ"
+      ],
+      "unit":[
+         "4"
+      ],
+      "topic":[
+         "4.5"
+      ],
+      "subtopic":[
+         "4.5.2"
+      ],
+      "descriptor":[
+         "4.5.2.1"
+      ],
+      "text":"blah blah"
+   },
+   {
+      "question":"00035",
+      "marks":"3",
+      "difficulty":[
+         "SF"
+      ],
+      "tech":[
+         "TF"
+      ],
+      "format":[
+         "SR"
+      ],
+      "unit":[
+         "4"
+      ],
+      "topic":[
+         "4.3"
+      ],
+      "subtopic":[
+         "4.3.1"
+      ],
+      "descriptor":[
+         "4.3.1.1",
+         "4.3.1.2",
+         "4.3.1.3",
+         "4.3.1.4"
+      ],
+      "text":"blah blah"
+   },
+   {
+      "question":"00037",
+      "marks":"1",
+      "difficulty":[
+         "SF"
+      ],
+      "tech":[
+         "TA"
+      ],
+      "format":[
+         "MCQ"
+      ],
+      "unit":[
+         "4"
+      ],
+      "topic":[
+         "4.4"
+      ],
+      "subtopic":[
+         "4.4.1"
+      ],
+      "descriptor":[
+         "4.4.1.2"
+      ],
+      "text":"blah blah"
+   },
+   {
+      "question":"00038",
+      "marks":"5",
+      "difficulty":[
+         "CU"
+      ],
+      "tech":[
+         "TA"
+      ],
+      "format":[
+         "SR"
+      ],
+      "unit":[
+         "4"
+      ],
+      "topic":[
+         "4.4"
+      ],
+      "subtopic":[
+         "4.4.1",
+         "4.4.2"
+      ],
+      "descriptor":[
+         "4.4.1.4",
+         "4.4.2.1",
+         "4.4.2.2",
+         "4.4.2.3"
+      ],
+      "text":"blah blah"
+   },
+   {
+      "question":"00039",
+      "marks":"1",
+      "difficulty":[
+         "SF"
+      ],
+      "tech":[
+         "TA"
+      ],
+      "format":[
+         "MCQ"
+      ],
+      "unit":[
+         "3",
+         "4"
+      ],
+      "topic":[
+         "3.2",
+         "4.1"
+      ],
+      "subtopic":[
+         "3.2.1",
+         "3.2.4",
+         "4.1.1"
+      ],
+      "descriptor":[
+         "3.2.1.4",
+         "3.2.4.1",
+         "4.1.1.2"
+      ],
+      "text":"blah blah"
+   },
+   {
+      "question":"00040",
+      "marks":"9",
+      "difficulty":[
+         "CU"
+      ],
+      "tech":[
+         "TF"
+      ],
+      "format":[
+         "SR"
+      ],
+      "unit":[
+         "3",
+         "4"
+      ],
+      "topic":[
+         "3.2",
+         "4.1",
+         "4.2"
+      ],
+      "subtopic":[
+         "3.2.3",
+         "3.2.4",
+         "4.1.1",
+         "4.2.1"
+      ],
+      "descriptor":[
+         "3.2.3.1",
+         "3.2.4.1",
+         "4.1.1.4",
+         "4.1.1.6",
+         "4.2.1.1"
+      ],
+      "text":"blah blah"
+   },
+   {
+      "question":"00041",
+      "marks":"1",
+      "difficulty":[
+         "SF"
+      ],
+      "tech":[
+         "TF"
+      ],
+      "format":[
+         "MCQ"
+      ],
+      "unit":[
+         "3"
+      ],
+      "topic":[
+         "3.1"
+      ],
+      "subtopic":[
+         "3.1.1"
+      ],
+      "descriptor":[
+         "3.1.1.4"
+      ],
+      "text":"blah blah"
+   },
+   {
+      "question":"00042",
+      "marks":"1",
+      "difficulty":[
+         "SF"
+      ],
+      "tech":[
+         "TF"
+      ],
+      "format":[
+         "MCQ"
+      ],
+      "unit":[
+         "3"
+      ],
+      "topic":[
+         "3.1",
+         "3.3"
+      ],
+      "subtopic":[
+         "3.1.1",
+         "3.3.1"
+      ],
+      "descriptor":[
+         "3.1.1.1",
+         "3.3.1.2",
+         "3.3.1.5"
+      ],
+      "text":"blah blah"
+   },
+   {
+      "question":"00043",
+      "marks":"2",
+      "difficulty":[
+         "SF"
+      ],
+      "tech":[
+         "TA"
+      ],
+      "format":[
+         "SR"
+      ],
+      "unit":[
+         "4"
+      ],
+      "topic":[
+         "4.3"
+      ],
+      "subtopic":[
+         "4.3.2"
+      ],
+      "descriptor":[
+         "4.3.2.2",
+         "4.3.2.3",
+         "4.3.2.4",
+         "4.3.2.5"
+      ],
+      "text":"blah blah"
+   },
+   {
+      "question":"00046",
+      "marks":"1",
+      "difficulty":[
+         "SF"
+      ],
+      "tech":[
+         "TF"
+      ],
+      "format":[
+         "MCQ"
+      ],
+      "unit":[
+         "4"
+      ],
+      "topic":[
+         "4.5"
+      ],
+      "subtopic":[
+         "4.5.3"
+      ],
+      "descriptor":[
+         "4.5.3.1",
+         "4.5.3.4"
+      ],
+      "text":"blah blah"
+   },
+   {
+      "question":"00047",
+      "marks":"1",
+      "difficulty":[
+         "SF"
+      ],
+      "tech":[
+         "TA"
+      ],
+      "format":[
+         "MCQ"
+      ],
+      "unit":[
+         "4"
+      ],
+      "topic":[
+         "4.5"
+      ],
+      "subtopic":[
+         "4.5.3"
+      ],
+      "descriptor":[
+         "4.5.3.3"
+      ],
+      "text":"blah blah"
+   },
+   {
+      "question":"00048",
+      "marks":"3",
+      "difficulty":[
+         "CF"
+      ],
+      "tech":[
+         "TF"
+      ],
+      "format":[
+         "SR"
+      ],
+      "unit":[
+         "3"
+      ],
+      "topic":[
+         "3.1",
+         "3.2"
+      ],
+      "subtopic":[
+         "3.1.1",
+         "3.2.2"
+      ],
+      "descriptor":[
+         "3.1.1.1",
+         "3.2.2.1",
+         "3.2.2.3"
+      ],
+      "text":"blah blah"
+   },
+   {
+      "question":"00049",
+      "marks":"5",
+      "difficulty":[
+         "CF"
+      ],
+      "tech":[
+         "TA"
+      ],
+      "format":[
+         "SR"
+      ],
+      "unit":[
+         "4"
+      ],
+      "topic":[
+         "4.2"
+      ],
+      "subtopic":[
+         "4.2.1"
+      ],
+      "descriptor":[
+         "4.2.1.3",
+         "4.2.1.4"
+      ],
+      "text":"blah blah"
+   },
+   {
+      "question":"00050",
+      "marks":"1",
+      "difficulty":[
+         "SF"
+      ],
+      "tech":[
+         "TA"
+      ],
+      "format":[
+         "MCQ"
+      ],
+      "unit":[
+         "3"
+      ],
+      "topic":[
+         "3.1"
+      ],
+      "subtopic":[
+         "3.1.1"
+      ],
+      "descriptor":[
+         "3.1.1.2"
+      ],
+      "text":"blah blah"
+   },
+   {
+      "question":"00051",
+      "marks":"1",
+      "difficulty":[
+         "SF"
+      ],
+      "tech":[
+         "TF"
+      ],
+      "format":[
+         "MCQ"
+      ],
+      "unit":[
+         "3"
+      ],
+      "topic":[
+         "3.3"
+      ],
+      "subtopic":[
+         "3.3.1",
+         "3.3.2",
+         "3.3.3"
+      ],
+      "descriptor":[
+         "3.3.1.3",
+         "3.3.2.3",
+         "3.3.2.5",
+         "3.3.3.1"
+      ],
+      "text":"blah blah"
+   },
+   {
+      "question":"00052",
+      "marks":"5",
+      "difficulty":[
+         "CU"
+      ],
+      "tech":[
+         "TA"
+      ],
+      "format":[
+         "SR"
+      ],
+      "unit":[
+         "3"
+      ],
+      "topic":[
+         "3.1"
+      ],
+      "subtopic":[
+         "3.1.1"
+      ],
+      "descriptor":[
+         "3.1.1.1",
+         "3.1.1.6"
+      ],
+      "text":"blah blah"
+   },
+   {
+      "question":"00053",
+      "marks":"2",
+      "difficulty":[
+         "SF"
+      ],
+      "tech":[
+         "TF"
+      ],
+      "format":[
+         "SR"
+      ],
+      "unit":[
+         "3"
+      ],
+      "topic":[
+         "3.2"
+      ],
+      "subtopic":[
+         "3.2.1",
+         "3.2.4"
+      ],
+      "descriptor":[
+         "3.2.1.4",
+         "3.2.4.1"
+      ],
+      "text":"blah blah"
+   },
+   {
+      "question":"00054",
+      "marks":"1",
+      "difficulty":[
+         "SF"
+      ],
+      "tech":[
+         "TF"
+      ],
+      "format":[
+         "MCQ"
+      ],
+      "unit":[
+         "4"
+      ],
+      "topic":[
+         "4.1"
+      ],
+      "subtopic":[
+         "4.1.1"
+      ],
+      "descriptor":[
+         "4.1.1.3",
+         "4.1.1.5"
+      ],
+      "text":"blah blah"
+   },
+   {
+      "question":"00055",
+      "marks":"3",
+      "difficulty":[
+         "SF"
+      ],
+      "tech":[
+         "TA"
+      ],
+      "format":[
+         "SR"
+      ],
+      "unit":[
+         "4"
+      ],
+      "topic":[
+         "4.2"
+      ],
+      "subtopic":[
+         "4.2.1"
+      ],
+      "descriptor":[
+         "4.2.1.3"
+      ],
+      "text":"blah blah"
+   },
+   {
+      "question":"00056",
+      "marks":"6",
+      "difficulty":[
+         "CF"
+      ],
+      "tech":[
+         "TF"
+      ],
+      "format":[
+         "SR"
+      ],
+      "unit":[
+         "3"
+      ],
+      "topic":[
+         "3.1",
+         "3.2",
+         "3.3"
+      ],
+      "subtopic":[
+         "3.1.1",
+         "3.2.1",
+         "3.2.2",
+         "3.2.4",
+         "3.3.1",
+         "3.3.2"
+      ],
+      "descriptor":[
+         "3.1.1.1",
+         "3.2.1.4",
+         "3.2.2.1",
+         "3.2.2.2",
+         "3.2.4.1",
+         "3.3.1.1",
+         "3.3.1.2",
+         "3.3.1.4",
+         "3.3.1.7",
+         "3.3.1.10",
+         "3.3.2.5"
+      ],
+      "text":"blah blah"
+   },
+   {
+      "question":"00057",
+      "marks":"1",
+      "difficulty":[
+         "SF"
+      ],
+      "tech":[
+         "TF"
+      ],
+      "format":[
+         "MCQ"
+      ],
+      "unit":[
+         "3"
+      ],
+      "topic":[
+         "3.1"
+      ],
+      "subtopic":[
+         "3.1.1"
+      ],
+      "descriptor":[
+         "3.1.1.4"
+      ],
+      "text":"blah blah"
+   },
+   {
+      "question":"00058",
+      "marks":"2",
+      "difficulty":[
+         "SF"
+      ],
+      "tech":[
+         "TF"
+      ],
+      "format":[
+         "SR"
+      ],
+      "unit":[
+         "4"
+      ],
+      "topic":[
+         "4.5"
+      ],
+      "subtopic":[
+         "4.5.1"
+      ],
+      "descriptor":[
+         "4.5.1.1",
+         "4.5.1.2"
+      ],
+      "text":"blah blah"
+   },
+   {
+      "question":"00059",
+      "marks":"3",
+      "difficulty":[
+         "SF"
+      ],
+      "tech":[
+         "TF"
+      ],
+      "format":[
+         "SR"
+      ],
+      "unit":[
+         "3",
+         "4"
+      ],
+      "topic":[
+         "3.3",
+         "4.4"
+      ],
+      "subtopic":[
+         "3.3.1",
+         "4.4.1"
+      ],
+      "descriptor":[
+         "3.3.1.6",
+         "3.3.1.9",
+         "4.4.1.2"
+      ],
+      "text":"blah blah"
+   },
+   {
+      "question":"00060",
+      "marks":"6",
+      "difficulty":[
+         "CU"
+      ],
+      "tech":[
+         "TA"
+      ],
+      "format":[
+         "SR"
+      ],
+      "unit":[
+         "3",
+         "4"
+      ],
+      "topic":[
+         "3.3",
+         "4.3",
+         "4.4"
+      ],
+      "subtopic":[
+         "3.3.1",
+         "3.3.2",
+         "3.3.3",
+         "4.3.2",
+         "4.4.1"
+      ],
+      "descriptor":[
+         "3.3.1.2",
+         "3.3.2.3",
+         "3.3.3.1",
+         "4.3.2.1",
+         "4.3.2.2",
+         "4.3.2.5",
+         "4.4.1.2"
+      ],
+      "text":"blah blah"
+   },
+   {
+      "question":"00061",
+      "marks":"4",
+      "difficulty":[
+         "CU"
+      ],
+      "tech":[
+         "TF"
+      ],
+      "format":[
+         "SR"
+      ],
+      "unit":[
+         "3"
+      ],
+      "topic":[
+         "3.2",
+         "3.3"
+      ],
+      "subtopic":[
+         "3.2.3",
+         "3.2.4",
+         "3.3.1",
+         "3.3.2"
+      ],
+      "descriptor":[
+         "3.2.3.1",
+         "3.2.4.1",
+         "3.3.1.1",
+         "3.3.1.2",
+         "3.3.1.10",
+         "3.3.2.5"
+      ],
+      "text":"blah blah"
+   },
+   {
+      "question":"00062",
+      "marks":"6",
+      "difficulty":[
+         "CU"
+      ],
+      "tech":[
+         "TF"
+      ],
+      "format":[
+         "SR"
+      ],
+      "unit":[
+         "3"
+      ],
+      "topic":[
+         "3.2"
+      ],
+      "subtopic":[
+         "3.2.1",
+         "3.2.4"
+      ],
+      "descriptor":[
+         "3.2.1.4",
+         "3.2.4.1"
+      ],
+      "text":"blah blah"
+   },
+   {
+      "question":"00063",
+      "marks":"6",
+      "difficulty":[
+         "CU"
+      ],
+      "tech":[
+         "TF"
+      ],
+      "format":[
+         "SR"
+      ],
+      "unit":[
+         "3"
+      ],
+      "topic":[
+         "3.1"
+      ],
+      "subtopic":[
+         "3.1.1"
+      ],
+      "descriptor":[
+         "3.1.1.1"
+      ],
+      "text":"blah blah"
+   },
+   {
+      "question":"00064",
+      "marks":"9",
+      "difficulty":[
+         "CU"
+      ],
+      "tech":[
+         "TF"
+      ],
+      "format":[
+         "SR"
+      ],
+      "unit":[
+         "3",
+         "4"
+      ],
+      "topic":[
+         "3.2",
+         "3.3",
+         "4.1"
+      ],
+      "subtopic":[
+         "3.2.1",
+         "3.2.3",
+         "3.2.4",
+         "3.3.1",
+         "4.1.1"
+      ],
+      "descriptor":[
+         "3.2.1.3",
+         "3.2.3.1",
+         "3.2.4.1",
+         "3.3.1.1",
+         "3.3.1.2",
+         "4.1.1.4"
+      ],
+      "text":"blah blah"
+   },
+   {
+      "question":"00065",
+      "marks":"6",
+      "difficulty":[
+         "CU"
+      ],
+      "tech":[
+         "TA"
+      ],
+      "format":[
+         "SR"
+      ],
+      "unit":[
+         "3"
+      ],
+      "topic":[
+         "3.3"
+      ],
+      "subtopic":[
+         "3.3.1",
+         "3.3.3"
+      ],
+      "descriptor":[
+         "3.3.1.1",
+         "3.3.1.2",
+         "3.3.3.2"
+      ],
+      "text":"blah blah"
+   },
+   {
+      "question":"00066",
+      "marks":"4",
+      "difficulty":[
+         "CU"
+      ],
+      "tech":[
+         "TA"
+      ],
+      "format":[
+         "SR"
+      ],
+      "unit":[
+         "3",
+         "4"
+      ],
+      "topic":[
+         "3.3",
+         "4.4"
+      ],
+      "subtopic":[
+         "3.3.2",
+         "3.3.3",
+         "4.4.1"
+      ],
+      "descriptor":[
+         "3.3.2.5",
+         "3.3.3.3",
+         "4.4.1.2",
+         "4.4.1.3"
+      ],
+      "text":"blah blah"
+   },
+   {
+      "question":"00067",
+      "marks":"5",
+      "difficulty":[
+         "CU"
+      ],
+      "tech":[
+         "TA"
+      ],
+      "format":[
+         "SR"
+      ],
+      "unit":[
+         "4"
+      ],
+      "topic":[
+         "4.4"
+      ],
+      "subtopic":[
+         "4.4.1",
+         "4.4.2"
+      ],
+      "descriptor":[
+         "4.4.1.3",
+         "4.4.2.2",
+         "4.4.2.3"
+      ],
+      "text":"blah blah"
+   }
 ]
