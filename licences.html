@@ -96,12 +96,20 @@
             background-color: #f1f1f1;
             font-size: 14px;
         }
+        @media screen and (max-width: 768px) {
+            .home-button {
+                display: none;
+            }
+        }
+
     </style>
 </head>
 
 <body>
     <header>
-        <div class="title">QCE Vault</div>
+        <a href="index.html" style="text-decoration: none; color: white;">  
+            <div class="title">QCE Vault</div>
+        </a>
         <a href="index.html" class="home-button">Home</a>
     </header>
     <main>
