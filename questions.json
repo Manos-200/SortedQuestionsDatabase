@@ -2,9 +2,7 @@
    {
       "question":"00001",
       "marks":"1",
-      "difficulty":[
-         "SF"
-      ],
+      "difficulty":[],
       "tech":[
          "TF"
       ],
