@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QCAA Sorter</title>
+    <title>QCE Vault - Methods</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -278,8 +278,8 @@
 </head>
 <body>
     <header>
-        <h1>DEMO - Not for actual use just yet :)</h1>
-        <p>Filter QCAA Exam Questions by Difficulty and Syllabus Descriptor</p>
+        <h1>QCE Vault DEMO</h1>
+        <p>Filter to find the perfect question</p>
         <a href="../index.html" class="home-button">Home</a>
     </header>
     <main>
@@ -347,10 +347,9 @@
                 <aside class="links-section">
                 <u1>
                     <h2>Navigate</h2>   
-                    <li><a href="https://www.qcaa.qld.edu.au/downloads/senior-qce/syllabuses/snr_maths_methods_19_syll.pdf">Methods Syllabus</a></li>
-                    <li><a href="https://www.qcaa.qld.edu.au/downloads/senior-qce/mathematics/snr_maths_methods_21_formula_sheet.pdf">Methods Formula Sheet</a></li>
-                    <li><a href="https://www.derivative-calculator.net/">Derivative Calculator</a></li>
-                    <li><a href="https://www.integral-calculator.com/">Licenses</a></li>
+                    <li><a href="../licences.html">Licences</a></li>
+                    <li><a href="../about.html">About</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
                 </u1>
                 </aside>
             </div>
@@ -908,7 +907,7 @@ const topics = {
             currentPage = 0;
 
             // Fetch JSON data (replace the URL with the actual path to your JSON file)
-            fetch('https://manos-200.github.io/SortedQuestionsDatabase/questions.json')
+            fetch('https://manos-200.github.io/QCE-Vault/questions.json')
                 .then(response => response.json())
                 .then(data => {
                     const filteredResults = data.filter(q =>
@@ -958,7 +957,7 @@ function displayResults(results, resultsDiv) {
                     <p> <strong>Descriptor(s):</strong> ${q.descriptor.join(', ')} </p>
                 </div>
             </div>
-            <button class="reveal-answer-button" onclick="revealAnswer('${q.question}')">Reveal Answer</button>
+            <button class="reveal-answer-button" onclick="revealAnswer('${q.question}')">Show/Hide Answer</button>
             <div id="answer-${q.question}" class="answer-container" style="display: none;">
                 <img src="${answerUrl}" alt="Answer Image for ${q.question}" class="answer-image"
                     onerror="this.onerror=null; this.src=''; this.alt='Error. Could not load answer image';">
@@ -1028,8 +1027,7 @@ function revealAnswer(questionId) {
     </script>
 </body>
 <footer>
-    <p xmlns:cc="http://creativecommons.org/ns#" >Material from QCAA is &copy State of Queensland (<a href="https://www.qcaa.qld.edu.au/copyright">QCAA<a/>) 2024 <a href="https://creativecommons.org/licenses/by-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-ND 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1" alt=""></a></p>
-    <p xmlns:cc="http://creativecommons.org/ns#" >The rest of this work is licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""></a></p>
+    <p xmlns:cc="http://creativecommons.org/ns#" >All questions are licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""></a></p>
 
 </footer>
 </html>
