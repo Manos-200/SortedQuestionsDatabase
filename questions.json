@@ -23,7 +23,7 @@
       "descriptor":[
          "4.5.1.1"
       ],
-      "text":"Blah blah"
+      "text":""
    },
    {
       "question":"00002",
@@ -58,7 +58,7 @@
          "3.3.3.2",
          "3.3.3.4"
       ],
-      "text":"The vertical acceleration of 'The Giant Drop' at Dreamworld is given by the function a(t). Given the ride starts from rest, determine the ride's displacement in its third second of motion"
+      "text":""
    },
    {
       "question":"00003",
@@ -84,7 +84,7 @@
       "descriptor":[
          "3.3.3.3"
       ],
-      "text":"blah blah"
+      "text":""
    },
    {
       "question":"00004",
@@ -110,7 +110,7 @@
       "descriptor":[
          "4.4.1.1"
       ],
-      "text":"blah blah"
+      "text":""
    },
    {
       "question":"00005",
@@ -145,7 +145,7 @@
          "3.2.2.3",
          "3.2.2.4"
       ],
-      "text":"blah blah"
+      "text":""
    },
    {
       "question":"00007",
@@ -171,7 +171,7 @@
       "descriptor":[
          "4.2.1.3"
       ],
-      "text":"blah blah"
+      "text":""
    },
    {
       "question":"00008",
@@ -200,7 +200,7 @@
          "4.3.2.5",
          "4.4.2.3"
       ],
-      "text":"blah blah"
+      "text":""
    },
    {
       "question":"00009",
@@ -228,7 +228,7 @@
          "4.3.1.2",
          "4.3.1.3"
       ],
-      "text":"blah blah"
+      "text":""
    },
    {
       "question":"00010",
@@ -262,7 +262,7 @@
          "3.2.4.1",
          "4.1.1.4"
       ],
-      "text":"blah blah"
+      "text":""
    },
    {
       "question":"00011",
@@ -294,7 +294,7 @@
          "3.2.4.1",
          "4.1.1.1"
       ],
-      "text":"blah blah"
+      "text":""
    },
    {
       "question":"00012",
@@ -322,7 +322,7 @@
          "3.3.1.11",
          "3.3.2.2"
       ],
-      "text":"blah blah"
+      "text":""
    },
    {
       "question":"00013",
@@ -356,7 +356,7 @@
          "4.5.3.1",
          "4.5.3.4"
       ],
-      "text":"blah blah"
+      "text":""
    },
    {
       "question":"00016",
@@ -384,7 +384,7 @@
          "4.4.1.4",
          "4.4.2.1"
       ],
-      "text":"blah blah"
+      "text":""
    },
    {
       "question":"00017",
@@ -410,7 +410,7 @@
       "descriptor":[
          "3.1.1.3"
       ],
-      "text":"blah blah"
+      "text":""
    },
    {
       "question":"00018",
@@ -443,7 +443,7 @@
          "3.2.4.1",
          "4.2.1.2"
       ],
-      "text":"blah blah"
+      "text":""
    },
    {
       "question":"00019",
@@ -469,7 +469,7 @@
       "descriptor":[
          "3.2.1.2"
       ],
-      "text":"blah blah"
+      "text":""
    },
    {
       "question":"00020",
@@ -498,7 +498,7 @@
          "4.3.2.3",
          "4.3.2.5"
       ],
-      "text":"blah blah"
+      "text":""
    },
    {
       "question":"00022",
@@ -527,7 +527,7 @@
          "3.3.1.8",
          "3.3.1.9"
       ],
-      "text":"blah blah"
+      "text":""
    },
    {
       "question":"00023",
@@ -555,7 +555,7 @@
          "3.2.3.1",
          "3.2.4.1"
       ],
-      "text":"blah blah"
+      "text":""
    },
    {
       "question":"00024",
@@ -584,7 +584,7 @@
          "3.2.1.4",
          "3.2.2.2"
       ],
-      "text":"blah blah"
+      "text":""
    },
    {
       "question":"00025",
@@ -615,7 +615,7 @@
          "3.3.2.5",
          "3.3.3.3"
       ],
-      "text":"blah blah"
+      "text":""
    },
    {
       "question":"00026",
@@ -649,7 +649,7 @@
          "4.4.1.2",
          "4.4.1.3"
       ],
-      "text":"blah blah"
+      "text":""
    },
    {
       "question":"00030",
@@ -675,7 +675,7 @@
       "descriptor":[
          "4.2.1.3"
       ],
-      "text":"blah blah"
+      "text":""
    },
    {
       "question":"00031",
@@ -706,7 +706,7 @@
          "3.3.2.4",
          "3.3.2.1"
       ],
-      "text":"blah blah"
+      "text":""
    },
    {
       "question":"00033",
@@ -732,7 +732,7 @@
       "descriptor":[
          "3.2.1.1"
       ],
-      "text":"blah blah"
+      "text":""
    },
    {
       "question":"00034",
@@ -758,7 +758,7 @@
       "descriptor":[
          "4.5.2.1"
       ],
-      "text":"blah blah"
+      "text":""
    },
    {
       "question":"00035",
@@ -787,7 +787,7 @@
          "4.3.1.3",
          "4.3.1.4"
       ],
-      "text":"blah blah"
+      "text":""
    },
    {
       "question":"00037",
@@ -813,7 +813,7 @@
       "descriptor":[
          "4.4.1.2"
       ],
-      "text":"blah blah"
+      "text":""
    },
    {
       "question":"00038",
@@ -843,7 +843,7 @@
          "4.4.2.2",
          "4.4.2.3"
       ],
-      "text":"blah blah"
+      "text":""
    },
    {
       "question":"00039",
@@ -875,7 +875,7 @@
          "3.2.4.1",
          "4.1.1.2"
       ],
-      "text":"blah blah"
+      "text":""
    },
    {
       "question":"00040",
@@ -911,7 +911,7 @@
          "4.1.1.6",
          "4.2.1.1"
       ],
-      "text":"blah blah"
+      "text":""
    },
    {
       "question":"00041",
@@ -937,7 +937,7 @@
       "descriptor":[
          "3.1.1.4"
       ],
-      "text":"blah blah"
+      "text":""
    },
    {
       "question":"00042",
@@ -967,7 +967,7 @@
          "3.3.1.2",
          "3.3.1.5"
       ],
-      "text":"blah blah"
+      "text":""
    },
    {
       "question":"00043",
@@ -996,7 +996,7 @@
          "4.3.2.4",
          "4.3.2.5"
       ],
-      "text":"blah blah"
+      "text":""
    },
    {
       "question":"00046",
@@ -1023,7 +1023,7 @@
          "4.5.3.1",
          "4.5.3.4"
       ],
-      "text":"blah blah"
+      "text":""
    },
    {
       "question":"00047",
@@ -1049,7 +1049,7 @@
       "descriptor":[
          "4.5.3.3"
       ],
-      "text":"blah blah"
+      "text":""
    },
    {
       "question":"00048",
@@ -1079,7 +1079,7 @@
          "3.2.2.1",
          "3.2.2.3"
       ],
-      "text":"blah blah"
+      "text":""
    },
    {
       "question":"00049",
@@ -1106,7 +1106,7 @@
          "4.2.1.3",
          "4.2.1.4"
       ],
-      "text":"blah blah"
+      "text":""
    },
    {
       "question":"00050",
@@ -1132,7 +1132,7 @@
       "descriptor":[
          "3.1.1.2"
       ],
-      "text":"blah blah"
+      "text":""
    },
    {
       "question":"00051",
@@ -1163,7 +1163,7 @@
          "3.3.2.5",
          "3.3.3.1"
       ],
-      "text":"blah blah"
+      "text":""
    },
    {
       "question":"00052",
@@ -1190,7 +1190,7 @@
          "3.1.1.1",
          "3.1.1.6"
       ],
-      "text":"blah blah"
+      "text":""
    },
    {
       "question":"00053",
@@ -1218,7 +1218,7 @@
          "3.2.1.4",
          "3.2.4.1"
       ],
-      "text":"blah blah"
+      "text":""
    },
    {
       "question":"00054",
@@ -1245,7 +1245,7 @@
          "4.1.1.3",
          "4.1.1.5"
       ],
-      "text":"blah blah"
+      "text":""
    },
    {
       "question":"00055",
@@ -1271,7 +1271,7 @@
       "descriptor":[
          "4.2.1.3"
       ],
-      "text":"blah blah"
+      "text":""
    },
    {
       "question":"00056",
@@ -1314,7 +1314,7 @@
          "3.3.1.10",
          "3.3.2.5"
       ],
-      "text":"blah blah"
+      "text":""
    },
    {
       "question":"00057",
@@ -1340,7 +1340,7 @@
       "descriptor":[
          "3.1.1.4"
       ],
-      "text":"blah blah"
+      "text":""
    },
    {
       "question":"00058",
@@ -1367,7 +1367,7 @@
          "4.5.1.1",
          "4.5.1.2"
       ],
-      "text":"blah blah"
+      "text":""
    },
    {
       "question":"00059",
@@ -1398,7 +1398,7 @@
          "3.3.1.9",
          "4.4.1.2"
       ],
-      "text":"blah blah"
+      "text":""
    },
    {
       "question":"00060",
@@ -1437,7 +1437,7 @@
          "4.3.2.5",
          "4.4.1.2"
       ],
-      "text":"blah blah"
+      "text":""
    },
    {
       "question":"00061",
@@ -1472,7 +1472,7 @@
          "3.3.1.10",
          "3.3.2.5"
       ],
-      "text":"blah blah"
+      "text":""
    },
    {
       "question":"00062",
@@ -1500,7 +1500,7 @@
          "3.2.1.4",
          "3.2.4.1"
       ],
-      "text":"blah blah"
+      "text":""
    },
    {
       "question":"00063",
@@ -1526,7 +1526,7 @@
       "descriptor":[
          "3.1.1.1"
       ],
-      "text":"blah blah"
+      "text":""
    },
    {
       "question":"00064",
@@ -1564,7 +1564,7 @@
          "3.3.1.2",
          "4.1.1.4"
       ],
-      "text":"blah blah"
+      "text":""
    },
    {
       "question":"00065",
@@ -1593,7 +1593,7 @@
          "3.3.1.2",
          "3.3.3.2"
       ],
-      "text":"blah blah"
+      "text":""
    },
    {
       "question":"00066",
@@ -1626,7 +1626,7 @@
          "4.4.1.2",
          "4.4.1.3"
       ],
-      "text":"blah blah"
+      "text":""
    },
    {
       "question":"00067",
@@ -1655,6 +1655,6 @@
          "4.4.2.2",
          "4.4.2.3"
       ],
-      "text":"blah blah"
+      "text":""
    }
 ]
