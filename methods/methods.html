@@ -115,7 +115,7 @@
             flex: 1;
             max-width: 200px;
         }
-        .right-section {
+        .nav-section {
             flex: 1;
             max-width: 200px;
             text-align: right;
@@ -215,7 +215,7 @@
                 width: 100%; /* Adjust descriptor to full width */
             }
             .links-section,
-            .right-section {
+            .nav-section, .home-button {
                 display: none; /* Hide the fancy links on mobile cause theres not enough room */
             }
         }
@@ -291,7 +291,9 @@
 </head>
 <body>
     <header>
-        <div class="title">QCE Vault DEMO</div>
+        <a href="../index.html" style="text-decoration: none; color: white;">
+            <div class="title">QCE Vault DEMO</div>
+        </a>
         <p>Filter to find the perfect question</p>
         <a href="../index.html" class="home-button">Home</a>
     </header>
@@ -349,14 +351,14 @@
                         <option value="SR">Short Response</option>
                         <option value="MCQ">Multiple Choice</option>
                     </select>
-                    <label for="text">Contains Text:</label>
-                    <input type="text" id="text" name="text" placeholder="Enter text to search">
+                    <label for="text">Contains Text: (WIP)</label>
+                    <input type="text" id="text" name="text" placeholder="WORK IN PROGRESS, DON'T USE">
 
 
                     <button type="button" onclick="filterQuestions()">Filter Questions</button>
                 </form>
             </section>
-            <div class="right-section">
+            <div class="nav-section">
                 <aside class="links-section">
                 <u1>
                     <h2>Navigate</h2>   
@@ -965,8 +967,8 @@ function displayResults(results, resultsDiv) {
                     class="result-image" 
                     onerror="this.onerror=null; this.src=''; this.alt='Error. Could not load image';">
                 <div class="result-details">
-                    <p> <strong>Difficulty:</strong> ${q.difficulty} <br> </p>
-                    <p> <strong>Technology:</strong> ${q.tech === 'TF' ? 'Tech Free' : 'Tech Active'} <br> </p>
+                    <p> <strong>Difficulty:</strong> ${q.difficulty.length === 0 || q.difficulty[0] === "" ? "Unspecified" : q.difficulty} <br> </p>
+                    <p> <strong>Technology:</strong> ${q.tech.length === 0 || q.tech[0] === "" ? "Unspecified" : q.tech} <br> </p>
                     <p> <strong>Descriptor(s):</strong> ${q.descriptor.join(', ')} </p>
                 </div>
             </div>
@@ -978,7 +980,7 @@ function displayResults(results, resultsDiv) {
             <hr class="divider">  <!-- Adding a divider line between results -->
         </div>`;
     });
-
+    
     // Check if there are more results to load
     const loadMoreButton = document.getElementById('loadMoreButton');
     let resultsLabel = document.getElementById('resultsLabel'); // Check if the label already exists
