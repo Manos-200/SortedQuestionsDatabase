@@ -190,35 +190,7 @@
             word-wrap: break-word;
         }
 
-        @media screen and (max-width: 768px) {
-            .result-item-content {
-                flex-direction: column; /* Stack image and text vertically */
-                align-items: center; /* Center align the content */
-            }
 
-            .result-image {
-                max-width: 90%; /* Shrink image to 90% of container width */
-                height: auto; /* Maintain aspect ratio */
-            }
-
-            .result-details {
-                text-align: left; /* Center text for better readability */
-                width: 100%; /* Use full width */
-                flex-direction: row;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                gap: 10px;
-            }
-
-            #descriptor {
-                width: 100%; /* Adjust descriptor to full width */
-            }
-            .links-section,
-            .nav-section, .home-button {
-                display: none; /* Hide the fancy links on mobile cause theres not enough room */
-            }
-        }
 
         .load-more {
             display: block;
@@ -270,13 +242,49 @@
         .answer-image {
             display: block;
             margin: 15px auto; /* Centers the image horizontally */
-            max-width: 90%; /* Ensures the image is responsive */
+            max-width: 800px; /* Ensures the image is responsive */
             max-height: 400px; /* Sets a reasonable maximum height */
             border: 1px solid #ddd; /* Adds a light border around the image */
             border-radius: 5px; /* Rounded corners for the image */
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
             object-fit: contain; /* Ensures the image doesn't stretch or distort */
         }
+
+        @media screen and (max-width: 768px) {
+            .result-item-content {
+                flex-direction: column; /* Stack image and text vertically */
+                align-items: center; /* Center align the content */
+            }
+
+            .result-image {
+                max-width: 90%; /* Shrink image to 90% of container width */
+                height: auto; /* Maintain aspect ratio */
+            }
+
+            .answer-image {
+                max-width: 90%;
+                height: auto;
+            }
+
+            .result-details {
+                text-align: left; /* Center text for better readability */
+                width: 100%; /* Use full width */
+                flex-direction: row;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 10px;
+            }
+
+            #descriptor {
+                width: 100%; /* Adjust descriptor to full width */
+            }
+            .links-section,
+            .nav-section, .home-button {
+                display: none; /* Hide the fancy links on mobile cause theres not enough room */
+            }
+        }
+
         footer {
             text-align: center;
             padding: 10px;
