@@ -359,8 +359,10 @@
                         <option value="SR">Short Response</option>
                         <option value="MCQ">Multiple Choice</option>
                     </select>
+                    <!-- Haven't been bothered to retype out all questions but left this here in case I change my mind
                     <label for="text">Contains Text: (WIP)</label>
                     <input type="text" id="text" name="text" placeholder="WORK IN PROGRESS, DON'T USE">
+                    -->
 
 
                     <button type="button" onclick="filterQuestions()">Filter Questions</button>
@@ -922,7 +924,8 @@ const topics = {
             const difficulty = document.getElementById('difficulty').value;
             const tech = document.getElementById('tech').value;
             const format = document.getElementById('format').value;
-            const text = document.getElementById('text').value.toLowerCase();
+            // Inoperative
+            // const text = document.getElementById('text').value.toLowerCase();
 
 
             const resultsDiv = document.getElementById('results');
@@ -940,8 +943,8 @@ const topics = {
                         (!descriptor || q.descriptor.includes(descriptor)) &&
                         (!difficulty || q.difficulty.includes(difficulty)) &&
                         (!tech || q.tech.includes(tech)) &&
-                        (!format || q.format.includes(format)) &&
-                        (!text || q.text.toLowerCase().includes(text))
+                        (!format || q.format.includes(format))
+                        // && (!text || q.text.toLowerCase().includes(text))
                     );
                     
                     
